@@ -66,23 +66,18 @@ img {
     letter-spacing: 1.25px;
 }
 
-.nav {
-    padding: 25px 0;
-}
-
-.nav-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
 .nav-item {
     display: inline-block;
     padding: 20px;
 }
 
-.nav-item a:hover,
-.nav-item a:focus {
+.nav-icon {
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav-icon a:hover,
+.nav-icon a:focus {
     color: #3d92c9;
     text-decoration: none;
 }
