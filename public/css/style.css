@@ -26,6 +26,9 @@ img { padding: 20px 0; }
 .nav-icon { display: inline-block; padding: 20px; }
 .nav-icon a:hover,
 .nav-icon a:focus { color: #3d92c9; text-decoration: none; }
+.link { list-style-type: none; padding: 8px }
+.anchor-styles { color: white; font-size: 22px }
+.anchor-styles a:hover { color: #3d92c9; text-decoration: none; }
 .resume-subhead {
     text-transform: uppercase;
     color: #666;
@@ -65,9 +68,12 @@ img { padding: 20px 0; }
         background-color: white;
         width: auto;
     }
-    .header { margin: 60% 2em 0; text-align: right; }
+    .header { margin: 40% 2em 0; text-align: right; }
     .sidebar { position: fixed; top: 0; bottom: 0; }
     .layout { background-color: white; }
+    video, iframe {
+        width: 100%
+    }
 }
 @media (max-width: 48em) {
     .description ul { padding: 0px; }

@@ -7,14 +7,15 @@ export default class Talks extends Component {
       <div id="layout" className="pure-g">
         <SideBar/>
         <div className="content pure-u-1 pure-u-md-3-4">
-          <h1 className="resume-subhead">Talks</h1>
-          <div className="description">
-            <div>
+          <div className="resume">
+            <h1 className="resume-subhead">Talks</h1>
+
+            <div style={{}}>
               <video
                 controls
                 src="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/GraphQL.mp4"
                 poster="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/public/img/GraphQLPoster.jpg"
-                width="620">
+                width="100%">
               </video>
             </div>
             <div>
