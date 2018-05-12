@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
+const sideBarStyles = {
+  background: '#666666',
+  color: '#fff'
+};
+
 const navListStyles = {
   margin: 0,
   padding: 0,
@@ -12,6 +17,16 @@ const navStyles = {
   padding: '25px 0'
 };
 
+const headerStyles = {
+  textAlign: 'center',
+  top: 'auto',
+  margin: '3em auto'
+};
+
+const navLinkStyles = {
+  color: 'white',
+}
+
 export default class SideBar extends Component {
   render() {
     return (
@@ -22,9 +37,15 @@ export default class SideBar extends Component {
           <h2 className="location">PDX, OR</h2>
           <nav style={navStyles}>
             <ul style={navListStyles}>
-              <li className="nav-item"><Link to="/work">Work</Link></li>
-              <li className="nav-item"><Link to="/talks">Talks</Link></li>
-              <li className="nav-item"><Link to="/music">Music</Link></li>
+              <li className="nav-item">
+                <Link to="/work">Work</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/talks">Talks</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/music">Music</Link>
+              </li>
               <li className="nav-icon">
                 <a href="http://github.com/akuttruff" target="_blank">
                   <i className="icon ion-social-github"></i>
