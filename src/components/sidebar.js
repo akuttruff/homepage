@@ -1,31 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-const sideBarStyles = {
-  background: '#666666',
-  color: '#fff'
-};
-
 const navListStyles = {
   margin: 0,
   padding: 0,
   listStyle: 'none',
-  textAlign: 'center'
-};
-
-const navStyles = {
-  padding: '25px 0'
-};
-
-const headerStyles = {
   textAlign: 'center',
-  top: 'auto',
-  margin: '3em auto'
 };
 
-const navLinkStyles = {
-  color: 'white',
-}
+const linkStyles = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '30px'
+};
 
 export default class SideBar extends Component {
   render() {
@@ -35,30 +23,32 @@ export default class SideBar extends Component {
           <h1 className="name">Amie Kuttruff </h1>
           <h2 className="bio">Software engineer, violinist.</h2>
           <h2 className="location">PDX, OR</h2>
-          <nav style={navStyles}>
+          <div style={linkStyles}>
+            <li style={{ listStyleType: 'none', padding: '5px' }}>
+              <Link to="/work" className="anchor-styles">Work</Link>
+            </li>
+            <li style={{ listStyleType: 'none', padding: '5px' }}>
+              <Link to="/talks" className="anchor-styles">Talks</Link>
+            </li>
+            <li style={{ listStyleType: 'none', padding: '5px' }}>
+              <Link to="/music" className="anchor-styles">Music</Link>
+            </li>
+          </div>
+          <nav>
             <ul style={navListStyles}>
-              <li className="nav-item">
-                <Link to="/work">Work</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/talks">Talks</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/music">Music</Link>
-              </li>
               <li className="nav-icon">
                 <a href="http://github.com/akuttruff" target="_blank">
-                  <i className="icon ion-social-github"></i>
+                  <i className="icon ion-social-github"/>
                 </a>
               </li>
               <li className="nav-icon">
                 <a href="http://twitter.com/amiekuttruff" target="_blank">
-                  <i className="icon ion-social-twitter"></i>
+                  <i className="icon ion-social-twitter"/>
                 </a>
               </li>
               <li className="nav-icon">
                 <a href="http://instagram.com/akuttruff" target="_blank">
-                  <i className="icon ion-social-instagram-outline"></i>
+                  <i className="icon ion-social-instagram-outline"/>
                 </a>
               </li>
             </ul>
