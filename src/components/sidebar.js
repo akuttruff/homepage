@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import FaTwitter from 'react-icons/lib/fa/twitter';
+import FaGithub from 'react-icons/lib/fa/github';
+import FaInstagram from 'react-icons/lib/fa/instagram';
 
 const navListStyles = {
   margin: 0,
@@ -15,6 +18,13 @@ const linkStyles = {
   padding: '30px'
 };
 
+const iconStyles = {
+  ':hover': {
+    color: '#3d92c9',
+    textDecoration: 'none'
+  }
+};
+
 export default class SideBar extends Component {
   render() {
     return (
@@ -22,7 +32,6 @@ export default class SideBar extends Component {
         <div className="header">
           <h1 className="name">Amie Kuttruff </h1>
           <h2 className="bio">Software engineer, violinist.</h2>
-          {/*<h2 className="location">PDX, OR</h2>*/}
           <div style={linkStyles}>
             <li style={{ listStyleType: 'none', padding: '5px' }}>
               <Link to="/work" className="anchor-styles">Work</Link>
@@ -38,17 +47,17 @@ export default class SideBar extends Component {
             <ul style={navListStyles}>
               <li className="nav-icon">
                 <a href="http://github.com/akuttruff" target="_blank">
-                  <i className="icon ion-social-github"/>
+                  <FaGithub fontSize="40px" color="white"  style={iconStyles}/>
                 </a>
               </li>
               <li className="nav-icon">
                 <a href="http://twitter.com/amiekuttruff" target="_blank">
-                  <i className="icon ion-social-twitter"/>
+                  <FaTwitter fontSize="40px" color="white" className="ionicon"/>
                 </a>
               </li>
               <li className="nav-icon">
                 <a href="http://instagram.com/akuttruff" target="_blank">
-                  <i className="icon ion-social-instagram-outline"/>
+                  <FaInstagram fontSize="40px" color="white" className="ionicon"/>
                 </a>
               </li>
             </ul>
