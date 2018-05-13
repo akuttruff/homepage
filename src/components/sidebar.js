@@ -45,19 +45,19 @@ export default class SideBar extends Component {
           </div>
           <nav>
             <ul style={navListStyles}>
-              <li className="nav-icon">
+              <li className="nav-item">
                 <a href="http://github.com/akuttruff" target="_blank">
-                  <FaGithub fontSize="40px" color="white"  style={iconStyles}/>
+                  <i className="icon ion-social-github"></i>
                 </a>
               </li>
-              <li className="nav-icon">
+              <li className="nav-item">
                 <a href="http://twitter.com/amiekuttruff" target="_blank">
-                  <FaTwitter fontSize="40px" color="white" className="ionicon"/>
+                  <i className="icon ion-social-twitter"></i>
                 </a>
               </li>
-              <li className="nav-icon">
-                <a href="http://instagram.com/akuttruff" target="_blank">
-                  <FaInstagram fontSize="40px" color="white" className="ionicon"/>
+              <li className="nav-item">
+                <a href="https://www.linkedin.com/in/amiekuttruff/" target="_blank">
+                  <i className="icon ion-social-linkedin"></i>
                 </a>
               </li>
             </ul>
