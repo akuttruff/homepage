@@ -93,4 +93,10 @@ img { padding: 20px 0; outline: 0 }
         width: 360px;
         height: auto
     }
+    #graphql-summary, #clojure-summary {
+        padding-top: 10px;
+    }
+    #graph-ql {
+        padding-bottom: 20px;
+    }
 }
