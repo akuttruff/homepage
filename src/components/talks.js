@@ -10,23 +10,25 @@ export default class Talks extends Component {
           <div className="resume">
             <h1 className="resume-subhead">Talks</h1>
 
-            <div style={{}}>
-              <video
-                controls
-                src="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/GraphQL.mp4"
-                poster="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/public/img/GraphQLPoster.jpg"
-                width="100%">
-              </video>
-            </div>
-            <div>
-              <iframe
-                width="620"
-                height="360"
-                src="https://www.youtube.com/embed/SOIhncWcCjA"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-              </iframe>
+            <div className="flex-grid">
+              <div className="col">
+                Schema-driven development with GraphQL and React-Apollo
+                <video
+                  controls
+                  width="460"
+                  src="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/GraphQL.mp4"
+                  poster="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/public/img/GraphQLPoster.jpg">
+                </video>
+              </div>
+              <div className="col">
+                Clojure/West 2015
+                <a href="https://youtu.be/SOIhncWcCjA" target="clojureWest">
+                  <img src="img/ClojureWestPoster.jpg"
+                    height="225px"
+                    width="460"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
