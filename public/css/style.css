@@ -26,6 +26,7 @@ img { padding: 20px 0; outline: 0 }
 .nav-icon { display: inline-block; padding: 20px; }
 .nav-icon a:hover,
 .nav-icon a:focus { color: #3d92c9; text-decoration: none; }
+.ionicon a:hover { color: #3d92c9; text-decoration: none; }
 .link { list-style-type: none; padding: 8px }
 .anchor-styles { color: white; font-size: 22px }
 .anchor-styles a:hover { color: #3d92c9; text-decoration: none; }
