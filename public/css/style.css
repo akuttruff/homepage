@@ -4,7 +4,7 @@ a { text-decoration: none; color: #3d92c9; outline: 0;}
 a:hover, a:focus { color: #3d92c9; text-decoration: none; }
 i { font-size: 40px; color: white; }
 i:hover, i:focus { color: #3d92c9; }
-img { padding: 20px 0; }
+img { padding: 20px 0; outline: 0 }
 .header { text-align: center; top: auto; margin: 3em auto; }
 .sidebar { background: #666666; color: #fff; }
 .name,
@@ -82,10 +82,10 @@ img { padding: 20px 0; }
     }
 }
 @media (max-width: 48em) {
-    .description ul { padding: 0px; }
-    .edu ul { padding: 0px; }
+    .description ul { padding: 0; }
+    .edu ul { padding: 0 }
     .col {
-        margin-left: -20px;
+        margin-left: -14px;
         padding-right: 20px;
         display: block;
     }
