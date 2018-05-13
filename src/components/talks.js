@@ -9,7 +9,7 @@ export default class Talks extends Component {
         <div className="content pure-u-1 pure-u-md-3-4">
           <div className="resume">
             <h1 className="resume-subhead">Talks</h1>
-            <div className="flex-grid">
+            <div>
               <div className="col">
                 <a href="https://youtu.be/SOIhncWcCjA" target="_blank">
                   <img src="img/ClojureWestPoster.jpg"
