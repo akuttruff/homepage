@@ -31,7 +31,7 @@ export default class Talks extends Component {
                   controls
                   width="460"
                   src="https://s3-us-west-2.amazonaws.com/akuttruff-media/GraphQL.mp4"
-                  poster="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/public/img/GraphQLPoster.jpg">
+                  poster="img/GraphQLPoster.jpg">
                 </video>
                 <br/>
                 SCHEMA-DRIVEN DEVELOPMENT WITH GRAPHQL AND REACT-APOLLO
