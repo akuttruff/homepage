@@ -22,7 +22,7 @@ export default class SideBar extends Component {
         <div className="header">
           <h1 className="name">Amie Kuttruff </h1>
           <h2 className="bio">Software engineer, violinist.</h2>
-          <h2 className="location">PDX, OR</h2>
+          {/*<h2 className="location">PDX, OR</h2>*/}
           <div style={linkStyles}>
             <li style={{ listStyleType: 'none', padding: '5px' }}>
               <Link to="/work" className="anchor-styles">Work</Link>
