@@ -11,7 +11,7 @@ export default class Talks extends Component {
             <h1 className="resume-subhead">Talks</h1>
             <div className="flex-grid">
               <div className="col">
-                <a href="https://youtu.be/SOIhncWcCjA">
+                <a href="https://youtu.be/SOIhncWcCjA" target="_blank">
                   <img src="img/ClojureWestPoster.jpg"
                     id="clojure-west"
                     height='auto'
