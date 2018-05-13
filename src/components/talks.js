@@ -14,6 +14,7 @@ export default class Talks extends Component {
               <div className="col">
                 <a href="https://youtu.be/SOIhncWcCjA" target="clojureWest">
                   <img src="img/ClojureWestPoster.jpg"
+                    id="clojure-west"
                     height='auto'
                     width="460"
                   />
@@ -26,9 +27,10 @@ export default class Talks extends Component {
               </div>
               <div className="col">
                 <video
+                  id="graph-ql"
                   controls
                   width="460"
-                  src="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/GraphQL.mp4"
+                  src="https://s3-us-west-2.amazonaws.com/akuttruff-media/GraphQL.mp4"
                   poster="https://s3-us-west-2.amazonaws.com/amiekuttruff.com/public/img/GraphQLPoster.jpg">
                 </video>
                 <br/>
