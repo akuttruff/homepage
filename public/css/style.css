@@ -1,10 +1,10 @@
 #layout { padding: 0; background-color: white; }
-* { font-family: 'Lato', sans-serif; font-weight: 300; }
+* { font-family: 'Lato', sans-serif; font-weight: 300; outline: 0}
 a { text-decoration: none; color: #3d92c9; outline: 0;}
 a:hover, a:focus { color: #3d92c9; text-decoration: none; }
 i { font-size: 40px; color: white; }
 i:hover, i:focus { color: #3d92c9; }
-img { padding: 20px 0; outline: 0 }
+img { padding: 20px 0 }
 .header { text-align: center; top: auto; margin: 3em auto; }
 .sidebar { background: #666666; color: #fff; }
 .name,
