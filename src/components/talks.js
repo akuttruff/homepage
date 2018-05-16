@@ -15,7 +15,7 @@ export default class Talks extends Component {
                   <img src="img/ClojureWestPoster.jpg"
                     id="clojure-west"
                     height='auto'
-                    width="460" />
+                    width="80%" />
                 </a>
                 <div>DEEPEN AND DIVERSIFY THE CLOJURE COMMUNITY WITH JUNIOR ENGINEERS</div>
                 <a href="http://2016.clojurewest.org/speakers#akuttruff" target="_blank">(Clojure/West 2016, Seattle WA)</a>
@@ -29,16 +29,16 @@ export default class Talks extends Component {
                 <video
                   id="graph-ql"
                   controls
-                  width="460"
+                  width="80%"
                   src="https://s3-us-west-2.amazonaws.com/akuttruff-media/GraphQL.mp4"
                   poster="img/GraphQLPoster.jpg">
                 </video>
                 <br/>
-                SCHEMA-DRIVEN DEVELOPMENT WITH GRAPHQL AND REACT-APOLLO
+                SCHEMA-DRIVEN DEVELOPMENT WITH GRAPH-QL AND REACT-APOLLO
                 <a href="https://renewfinancial.com/government" target="_blank">(Renew Financial 2018, Portland OR)</a>
                 <br/>
                 <div id="graphql-summary">
-                  GraphQL is a query language and server-side runtime for processing queries and mutations of data. It's language-agnostic, and allows you to define your own type system. With GraphQL, the shape of your query matches the shape of your response data, without the over- or under-fetching of data that you get with REST APIs. Combined with Apollo-React, GraphQL is a breath of fresh air for the full-stack development landscape.
+                  {`GraphQL is a query language and server-side runtime for processing queries and mutations of data. It's language-agnostic, and allows you to define your own type system. With GraphQL, the shape of your query matches the shape of your response data, without the over- or under-fetching of data that you get with REST APIs. Combined with Apollo-React, GraphQL is a breath of fresh air for the full-stack development landscape.`}
                 </div>
               </div>
             </div>
