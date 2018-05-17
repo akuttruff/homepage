@@ -9,5 +9,5 @@ To Dos:
 - remove font and layout dependencies on CDNs
 - replace Pure UI responsive layouts with Flexbox
 - add CSS modules for component-specific styles
-- fix lint errors
+- fix ESLint errors
 - add [a11y](https://a11yproject.com/)-friendly alt tags for images
