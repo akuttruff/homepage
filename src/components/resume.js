@@ -9,19 +9,34 @@ export default class Resume extends Component {
           <div className="content pure-u-1 pure-u-md-3-4">
             <div className="resume">
               <h1 className="resume-subhead">Work</h1>
+              <div className="title"><img src="img/skyward.png" height="60px"/></div>
+              <div className="title">
+                <a href="https://skyward.io/enterprise-solutions/" target="_blank">SKYWARD</a>
+                <div className="time">(July 2018 - present)</div>
+                Senior Front End Engineer
+              </div>
+              <div className="description">
+                <ul>
+                  <li>Designs, develops, and implements new capabilities for the Skyward Cloud Platform while safely deprecating and removing our legacy AngularJS framework</li>
+                  <li>Architects new features in React and Redux, with a passion for sane state management and ease of testability</li>
+                  <li>Works closely with UX specialists to build intuitive, simple, and elegant user interfaces</li>
+                  <li>Fosters collaborative Agile practices to help our teams develop quality software in the innovative industry of enterprise drone flight</li>
+                </ul>
+              </div>
+
               <div className="title"><img src="img/renew.png" height="60px"/></div>
               <div className="title">
                 <a href="https://renewfinancial.com/" target="_blank">RENEW FINANCIAL</a>
-                <div className="time">(October 2017 - present)</div>
+                <div className="time">(October 2017 - June 2018)</div>
                 Software Engineer II
               </div>
               <div className="description">
                 <ul>
-                  <li>Builds user interfaces that make renewable energy and energy-efficiency improvements accessible to homeowners</li>
-                  <li>Writes clean, testable, modern JavaScript with React.js + Redux within a legacy AngularJS codebase</li>
-                  <li>Ensures quality software by writing behavior-driven unit tests with Jasmine, Karma, and Enzyme</li>
-                  <li>Maintains a modern JavaScript ecosystem with tools like Webpack, Babel, ESLint, and Gulp</li>
-                  <li>Enthusiastically supports group and pair programming to promote open communication within an
+                  <li>Built user interfaces that make renewable energy and energy-efficiency improvements accessible to homeowners</li>
+                  <li>Wrote clean, testable, modern JavaScript with React.js + Redux within a legacy AngularJS codebase</li>
+                  <li>Ensured quality software by writing behavior-driven unit tests with Jasmine, Karma, and Enzyme</li>
+                  <li>Maintained a modern JavaScript ecosystem with tools like Webpack, Babel, ESLint, and Gulp</li>
+                  <li>Enthusiastically supported group and pair programming to promote open communication within an
                     agile product development environment
                   </li>
                 </ul>
