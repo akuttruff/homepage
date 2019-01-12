@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const navListStyles = {
   margin: 0,
   padding: 0,
   listStyle: 'none',
   textAlign: 'center',
+  fontSize: '50px',
 };
 
 const linkStyles = {
@@ -36,18 +37,18 @@ export default class SideBar extends Component {
           <nav>
             <ul style={navListStyles}>
               <li className="nav-item">
-                <a href="http://github.com/akuttruff" target="_blank">
-                  <i className="icon ion-social-github"/>
+                <a href="http://github.com/akuttruff" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-github"/>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="http://twitter.com/amiekuttruff" target="_blank">
-                  <i className="icon ion-social-twitter"/>
+                <a href="http://twitter.com/amiekuttruff" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-twitter"/>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="https://www.linkedin.com/in/amiekuttruff/" target="_blank">
-                  <i className="icon ion-social-linkedin"/>
+                <a href="https://www.linkedin.com/in/amiekuttruff/" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-linkedin-square"></i>
                 </a>
               </li>
             </ul>

@@ -5,9 +5,7 @@ This project ports my old website over to React + [React-Router](https://reacttr
 
 To Dos:
 ---
-- extract resume data as JSON
 - remove font and layout dependencies on CDNs
 - replace Pure UI responsive layouts with Flexbox
 - add CSS modules for component-specific styles
-- fix ESLint errors
 - add [a11y](https://a11yproject.com/)-friendly alt tags for images
