@@ -1,4 +1,9 @@
-import { ClojureTalk, GraphQLTalk } from './components/media';
+import { ClojureTalk, GraphQLTalk } from '../components/media';
+import jamaLogo from '../img/jama.png';
+import littleBirdLogo from '../img/littlebird_logo.png';
+import renewLogo from '../img/renew.png';
+import skywardLogo from '../img/skyward.png';
+import violinPhoto from '../img/violin.jpg';
 
 const educationDetails = [
   {
@@ -17,7 +22,7 @@ const musicDetails = {
   description: 'Classical violinist available for orchestra or chamber ensemble work',
   email: 'mailto:amie.kuttruff@gmail.com',
   emailLabel: 'Email',
-  imgSrc: 'img/violin.jpg',
+  imgSrc: violinPhoto,
 };
 
 const talkDetails = [
@@ -40,7 +45,7 @@ const talkDetails = [
 
 const workDetails = [
   {
-    imageSrc: 'img/skyward.png',
+    imageSrc: skywardLogo,
     alt: 'Skyward logo',
     companyLink: 'https://skyward.io/enterprise-solutions/',
     company: 'SKYWARD',
@@ -53,7 +58,7 @@ const workDetails = [
       'Fosters collaborative Agile practices to help our teams develop quality software in the innovative industry of enterprise drone flight',
     ]
   }, {
-    imageSrc: 'img/renew.png',
+    imageSrc: renewLogo,
     alt: 'Renew Financial logo',
     companyLink: 'https://renewfinancial.com/',
     company: 'RENEW FINANCIAL',
@@ -67,7 +72,7 @@ const workDetails = [
       'Enthusiastically supported group and pair programming to promote open communication within an agile product development environment',
     ]
   }, {
-    imageSrc: 'img/jama.png',
+    imageSrc: jamaLogo,
     alt: 'Jama Software logo',
     companyLink: 'http://www.jamasoftware.com',
     company: 'JAMA SOFTWARE',
@@ -80,7 +85,7 @@ const workDetails = [
       'Contributed to the development of an autoscaled Java microservice using AWS ECS',
     ]
   }, {
-    imageSrc: 'img/littlebird_logo.png',
+    imageSrc: littleBirdLogo,
     companyLink: 'http://getlittlebird.com',
     alt: 'Little Bird logo',
     company: 'LITTLE BIRD',
