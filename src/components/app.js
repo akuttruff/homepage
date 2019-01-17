@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+import '../style.css';
 import Resume from './resume';
 import Music from './music';
 import Talks from './talks';

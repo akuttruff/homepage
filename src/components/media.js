@@ -1,14 +1,15 @@
 import React from 'react';
+import clojureWestPoster from '../img/ClojureWestPoster.jpg';
+import graphQLPoster from '../img/GraphQLPoster.jpg';
 
 function ClojureTalk() {
   const id = 'clojure-west';
   const mediaSrc = 'https://youtu.be/SOIhncWcCjA';
-  const imageSrc = 'img/ClojureWestPoster.jpg';
 
   return (
     <a href={mediaSrc} target="_blank" rel="noopener noreferrer">
       <img id={id}
-           src={imageSrc}
+           src={clojureWestPoster}
            alt='ClojureWest Conference Poster'
            height='auto'
            width="80%" />
@@ -19,7 +20,6 @@ function ClojureTalk() {
 function GraphQLTalk() {
   const id = 'graph-ql';
   const mediaSrc = 'https://s3-us-west-2.amazonaws.com/akuttruff-media/GraphQL.mp4';
-  const imageSrc = 'img/GraphQLPoster.jpg';
 
   return (
     <video
@@ -27,7 +27,7 @@ function GraphQLTalk() {
       src={mediaSrc}
       controls
       width="80%"
-      poster={imageSrc}>
+      poster={graphQLPoster}>
     </video>
   );
 }
