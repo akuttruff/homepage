@@ -25,7 +25,7 @@ function TalkDetail(props) {
 }
 
 function TalkList({ talkDetails }) {
-  return talkDetails.map((talk) => {
+  return talkDetails.map((talk, index) => {
     const {
       title,
       talkSrc,
@@ -36,6 +36,7 @@ function TalkList({ talkDetails }) {
     } = talk;
 
     return <TalkDetail
+      key={index}
       title={title}
       talkSrc={talkSrc}
       location={location}
@@ -50,9 +51,9 @@ function TalkList({ talkDetails }) {
 export default class Talks extends Component {
   render() {
     return (
-      <div id="layout" className="pure-g">
+      <div>
         <SideBar/>
-        <div className="content pure-u-1 pure-u-md-3-4">
+        <div className="content">
           <div className="resume">
             <h1 className="resume-subhead">Talks</h1>
               <TalkList talkDetails={talkDetails} />

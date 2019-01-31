@@ -12,9 +12,9 @@ export default function Music() {
   } = musicDetails;
 
     return (
-      <div id="layout" className="pure-g">
+      <div>
         <SideBar/>
-        <div className="content pure-u-1 pure-u-md-3-4">
+        <div className="content">
           <div className="resume">
             <h1 className="resume-subhead">{title}</h1>
             <ul className="description">
