@@ -13,19 +13,21 @@ function WorkDetail({ detail }) {
     description,
   } = detail;
 
-  return <div>
-    <div className="title"><img src={imageSrc} alt={alt} height="60px"/></div>
-    <div className="title">
-      <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
-      <div className="time">{time}</div>
-      {title}
+  return (
+    <div>
+      <div className="title"><img src={imageSrc} alt={alt} height="60px"/></div>
+      <div className="title">
+        <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
+        <div className="time">{time}</div>
+        {title}
+      </div>
+      <div className="description">
+        <ul>
+          {description.map((item, index) => <li key={index}> {item} </li>)}
+        </ul>
+      </div>
     </div>
-    <div className="description">
-      <ul>
-        {description.map(item => <li> {item} </li>)}
-      </ul>
-    </div>
-  </div>
+    );
 }
 
 function WorkDetailList() {
@@ -62,9 +64,9 @@ function EducationDetails() {
 
 export default function Resume() {
   return (
-    <div id="layout" className="pure-g">
+    <div>
       <SideBar/>
-      <div className="content pure-u-1 pure-u-md-3-4">
+      <div className="content">
         <div className="resume">
           <WorkDetailList/>
           <EducationDetails/>

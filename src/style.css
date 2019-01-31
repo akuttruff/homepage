@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Lato';
-    src: local('Lato'), url('./fonts/Lato-Light.ttf') format('truetype');
-}
-#layout { padding: 0; background-color: white; }
 * { font-family: 'Lato', sans-serif; font-weight: 300; outline: 0}
 a { text-decoration: none; color: #3d92c9; outline: 0;}
 a:hover, a:focus { color: #3d92c9; text-decoration: none; }
@@ -10,14 +5,13 @@ i { font-size: 40px; color: white; }
 i:hover, i:focus { color: #3d92c9; }
 img { padding: 20px 0 }
 .header { text-align: center; top: auto; margin: 3em auto; }
-.sidebar { background: #666666; color: #fff; }
+.sidebar { background: #666666; color: #fff; width: 100% }
 .name,
 .bio,
 .location {
     text-align: center;
     margin: 0;
     letter-spacing: 1.5px;
-    text-align: center;
 }
 .bio, .location {
     margin-top: 1.5em;
@@ -44,7 +38,7 @@ img { padding: 20px 0 }
     margin-top: -1em;
     padding-top: 2em;
 }
-.content { padding: 2em; }
+.content { padding: 2em }
 .resume {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -82,8 +76,7 @@ img { padding: 20px 0 }
         width: auto;
     }
     .header { margin: 40% 2em 0; text-align: right; }
-    .sidebar { position: fixed; top: 0; bottom: 0; }
-    .layout { background-color: white; }
+    .sidebar { position: fixed; top: 0; bottom: 0; width: 25% }
     .col {
         padding-right: 20px;
         padding-bottom: 20px;
