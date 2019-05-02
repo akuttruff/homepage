@@ -1,9 +1,11 @@
 import { ClojureTalk, GraphQLTalk } from '../components/media';
-import jamaLogo from '../img/jama.png';
-import littleBirdLogo from '../img/littlebird_logo.png';
-import renewLogo from '../img/renew.png';
-import skywardLogo from '../img/skyward.png';
-import violinPhoto from '../img/violin.jpg';
+import {
+  jamaLogo,
+  littleBirdLogo,
+  renewLogo,
+  skywardLogo,
+  violinPhoto
+} from '../img';
 
 const educationDetails = [
   {
