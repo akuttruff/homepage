@@ -2,7 +2,7 @@ import React from 'react';
 import SideBar from './sidebar';
 import { workDetails, educationDetails } from '../data';
 
-function WorkDetail({ detail }) {
+function WorkDetailHeader({ detail }) {
   const {
     imageSrc,
     alt,
@@ -10,9 +10,7 @@ function WorkDetail({ detail }) {
     company,
     time,
     title,
-    description,
   } = detail;
-
   return (
     <div>
       <div className="title"><img src={imageSrc} alt={alt} height="60px"/></div>
@@ -21,6 +19,15 @@ function WorkDetail({ detail }) {
         <div className="time">{time}</div>
         {title}
       </div>
+    </div>
+  );
+}
+
+function WorkDetail({ detail }) {
+  const { description } = detail;
+  return (
+    <div>
+      <WorkDetailHeader detail={detail} />
       <div className="description">
         <ul>
           {description.map((item, index) => <li key={index}> {item} </li>)}

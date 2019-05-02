@@ -20,7 +20,7 @@ export default class SideBar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <div className="header">
+        <header className="header">
           <h1 className="name">Amie Kuttruff </h1>
           <h2 className="bio">Software engineer, violinist.</h2>
           <div style={linkStyles}>
@@ -53,7 +53,7 @@ export default class SideBar extends Component {
               </li>
             </ul>
           </nav>
-        </div>
+        </header>
       </div>
     );
   }
