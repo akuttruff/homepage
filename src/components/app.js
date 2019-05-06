@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
-import Resume from './resume';
-import Music from './music';
-import Talks from './talks';
+import Resume from '../containers/resume/index';
+import Music from '../containers/music/index';
+import TechTalks from '../containers/tech-talks/index';
+import Writing from './writing';
 
 const HomePage = () => (
   <Router>
     <div>
       <Route exact path="/" component={Resume}/>
       <Route path="/work" component={Resume}/>
-      <Route path="/talks" component={Talks}/>
+      <Route path="/talks" component={TechTalks}/>
       <Route path="/music" component={Music}/>
+      <Route path="/writing" component={Writing}/>
     </div>
   </Router>
 );
