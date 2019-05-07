@@ -4,7 +4,7 @@ import {
   littleBirdLogo,
   renewLogo,
   skywardLogo,
-  violinPhoto
+  violinPhoto,
 } from '../img';
 
 const routes = [
@@ -19,8 +19,8 @@ const routes = [
     title: 'Tech Talks',
   }, {
     link: '/writing',
-    title: 'Writing'
-  }
+    title: 'Writing',
+  },
 ];
 
 const socialLinks = [
@@ -29,11 +29,11 @@ const socialLinks = [
     iconClass: 'fa fa-github',
   }, {
     url: 'http://twitter.com/amiekuttruff',
-    iconClass: 'fa fa-twitter'
+    iconClass: 'fa fa-twitter',
   }, {
     url: 'https://www.linkedin.com/in/amiekuttruff/',
     iconClass: 'fa fa-linkedin-square',
-  }
+  },
 ];
 
 const educationDetails = [
@@ -44,8 +44,8 @@ const educationDetails = [
   }, {
     schoolLink: 'http://www.uni-tuebingen.de',
     school: 'Universität Tübingen',
-    subject: '— German Studies (2005)'
-  }
+    subject: '— German Studies (2005)',
+  },
 ];
 
 const musicDetails = {
@@ -71,7 +71,7 @@ const talkDetails = [
     summaryId: 'graphql-summary',
     summary: 'GraphQL is a query language and server-side runtime for processing queries and mutations of data. It\'s language-agnostic, and allows you to define your own type system. With GraphQL, the shape of your query matches the shape of your response data, without the over- or under-fetching of data that you get with REST APIs. Combined with Apollo-React, GraphQL is a breath of fresh air for the full-stack development landscape.',
     talkComponent: GraphQLVideo(),
-  }
+  },
 ];
 
 const workDetails = [
@@ -87,7 +87,7 @@ const workDetails = [
       'Architects new features in React and Redux, with a passion for sane state management and ease of testability',
       'Works closely with UX specialists to build intuitive, simple, and elegant user interfaces',
       'Fosters collaborative Agile practices to help our teams develop quality software in the innovative industry of enterprise drone flight',
-    ]
+    ],
   }, {
     img: renewLogo,
     alt: 'Renew Financial logo',
@@ -101,20 +101,20 @@ const workDetails = [
       'Ensured quality software by writing behavior-driven unit tests with Jasmine, Karma, and Enzyme',
       'Maintained a modern JavaScript ecosystem with tools like Webpack, Babel, ESLint, and Gulp',
       'Enthusiastically supported group and pair programming to promote open communication within an agile product development environment',
-    ]
+    ],
   }, {
     img: jamaLogo,
     alt: 'Jama Software logo',
     companyUrl: 'http://www.jamasoftware.com',
     company: 'JAMA SOFTWARE',
-    timeRangeRange: '(February 2016 - October 2017)',
+    timeRange: '(February 2016 - October 2017)',
     title: 'Software Engineer, Mid-Level',
     descriptionItems: [
       'Worked with UX and Product teams to implement market-differentiating features for requirements management software',
       'Refactored and improved a Java and EXT.js legacy codebase using React.js, Fluxxor, and Redux',
       'Developed code using test- and behavior-driven techniques with Jasmine, Karma, JUnit, and Enzyme',
       'Contributed to the development of an autoscaled Java microservice using AWS ECS',
-    ]
+    ],
   }, {
     img: littleBirdLogo,
     companyUrl: 'http://getlittlebird.com',
@@ -128,8 +128,8 @@ const workDetails = [
       'Scripted browser testing automation for QA',
       'Created data visualizations using D3 and Gephi',
       'Managed branched projects with Git in an agile environment',
-    ]
-  }
+    ],
+  },
 ];
 
 export {
@@ -138,6 +138,5 @@ export {
   educationDetails,
   musicDetails,
   talkDetails,
-  workDetails
+  workDetails,
 };
-

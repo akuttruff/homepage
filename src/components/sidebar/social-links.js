@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { SOCIAL_LINKS } from './prop-types';
 import SocialLink from './social-link';
 
 const navListStyles = {
@@ -10,23 +10,14 @@ const navListStyles = {
   fontSize: '50px',
 };
 
-const SocialLinks = ({ socialLinks }) => {
-  return (
-    <nav>
-      <ul style={navListStyles}>
-        { socialLinks.map(link => <SocialLink link={link} />) }
-      </ul>
-    </nav>
-  )
-};
+const SocialLinks = ({ socialLinks }) => (
+  <nav>
+    <ul style={navListStyles}>
+      { socialLinks.map((link, index) => <SocialLink link={link} key={index} />) }
+    </ul>
+  </nav>
+);
 
 export default SocialLinks;
 
-SocialLinks.propTypes = {
-  socialLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      iconClass: PropTypes.string.isRequired,
-    }).isRequired,
-  ).isRequired,
-};
+SocialLinks.propTypes = SOCIAL_LINKS;

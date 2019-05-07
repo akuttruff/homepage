@@ -1,6 +1,6 @@
 const skywardUrl = 'https://skyward.io';
 const skywardLink = `<a href=${skywardUrl} target="_blank" rel="noopener noreferrer">Skyward</a>`;
-const flightInsightsUrl = 'https://skyward.io/new-skyward-feature-uas-flight-insights/'
+const flightInsightsUrl = 'https://skyward.io/new-skyward-feature-uas-flight-insights/';
 const flightInsightsLink = `<a href=${flightInsightsUrl} target="_blank" rel="noopener noreferrer">Flight Insights</a>`;
 
 const skywardBlog = [
@@ -12,7 +12,7 @@ const skywardBlog = [
   'Because our entire front end application reduces into one single file, we can quickly and easily deploy real-time instances of our features while under development for the quality assurance, design, and product teams to continually review. Providing such visibility into each incremental change allowed us to build Flight Insights with a high degree of speed and quality.',
   'In order to create a clean and coherent interface for our features, we must implement good state management. State is data that allows us to model and respond to user interactions — this controls what the user can see and do. Our Front End team uses a library called Redux to help us write applications that manage data predictably and consistently. We can easily visualize when, where, why, and how our application’s state changes over time. We can then test each piece of our application and how it responds to every user interaction.',
   'The term “code complete” is a moving target and our job as software engineers is never finished. Software can always be improved, so the moment a piece of code is written, it could very well be considered legacy code. The less we interact with a piece of code and the less we know about how it works, the longer it takes to change it or add to it.',
-  'We want to avoid a build up of hard-to-manage “legacy code.” For a product manager, the mere mention of legacy code spells bad news — it’s difficult to predict how long development work may take within unfamiliar codebases. Since we’re constantly improving our user experience, we want to be able to quickly and reliably maintain, reorganize, and reuse our core application data and visual components. We can then safely deprecate legacy code while continually releasing new features like Flight Insights.'
+  'We want to avoid a build up of hard-to-manage “legacy code.” For a product manager, the mere mention of legacy code spells bad news — it’s difficult to predict how long development work may take within unfamiliar codebases. Since we’re constantly improving our user experience, we want to be able to quickly and reliably maintain, reorganize, and reuse our core application data and visual components. We can then safely deprecate legacy code while continually releasing new features like Flight Insights.',
 ];
 
-export { skywardBlog };
+export default skywardBlog;
