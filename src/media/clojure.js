@@ -7,13 +7,15 @@ const ClojureVideo = () => {
 
   return (
     <a href={mediaSrc} target="_blank" rel="noopener noreferrer">
-      <img id={id}
-           src={clojureWestPoster}
-           alt='ClojureWest Conference Poster'
-           height='auto'
-           width="80%" />
+      <img
+        id={id}
+        src={clojureWestPoster}
+        alt="ClojureWest Conference Poster"
+        height="auto"
+        width="80%"
+      />
     </a>
-  )
+  );
 };
 
 export default ClojureVideo;

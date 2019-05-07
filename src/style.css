@@ -4,7 +4,6 @@ a:hover, a:focus { color: #3d92c9; text-decoration: none; }
 i { font-size: 40px; color: white; }
 i:hover, i:focus { color: #3d92c9; }
 p { margin: 1em }
-img { padding: 20px 0 }
 .header { text-align: center; top: auto; padding: 3em; }
 .sidebar { background: #666666; color: #fff; width: 100% }
 .name,

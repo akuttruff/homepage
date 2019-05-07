@@ -2,6 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import './style.css';
-import HomePage from './components/app';
+import App from './components/app';
 
-render(<HomePage/>, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

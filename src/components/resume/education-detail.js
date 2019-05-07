@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { EDUCATION_DETAIL } from './prop-types';
 
-function EducationDetail({ detail }) {
+
+const EducationDetail = ({ detail }) => {
   const { schoolLink, school, subject } = detail;
   return (
     <li>
@@ -9,16 +10,8 @@ function EducationDetail({ detail }) {
       {subject}
     </li>
   );
-}
+};
 
 export default EducationDetail;
 
-EducationDetail.propTypes = {
-  detail: PropTypes.arrayOf(
-    PropTypes.shape({
-      schoolLink: PropTypes.string.isRequired,
-      school: PropTypes.string.isRequired,
-      subject: PropTypes.string.isRequired,
-    })
-  ),
-};
+EducationDetail.propTypes = EDUCATION_DETAIL;

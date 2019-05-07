@@ -1,6 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import WorkDetailHeader from './work-detail-header';
+import { WORK_DETAIL } from './prop-types';
+
 
 const WorkDetail = ({ detail }) => {
   const { descriptionItems } = detail;
@@ -9,23 +10,17 @@ const WorkDetail = ({ detail }) => {
       <WorkDetailHeader detail={detail} />
       <div className="description">
         <ul>
-          {descriptionItems.map((item, index) => <li key={index}> {item} </li>)}
+          {descriptionItems.map((item, index) => (
+            <li key={index}>
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
   );
 };
 
-export default WorkDetail;
+WorkDetail.propTypes = WORK_DETAIL;
 
-WorkDetail.propTypes = {
-  detail: PropTypes.arrayOf(
-    PropTypes.shape({
-      img: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
-      companyUrl: PropTypes.string.isRequired,
-      company: PropTypes.string.isRequired,
-      timeRange: PropTypes.string.isRequired,
-    })
-  ),
-};
+export default WorkDetail;

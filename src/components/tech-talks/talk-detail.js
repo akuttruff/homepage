@@ -1,35 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { TALK_DETAIL } from './prop-types';
 
-const TalkDetail = (props) => {
+const TalkDetail = ({ detail }) => {
   const {
     title,
     talkSrc,
     location,
     summaryId,
     summary,
-    talkComponent
-  } = props;
+    talkComponent,
+  } = detail;
 
   return (
     <div className="col">
-      {talkComponent}
+      { talkComponent }
       <div>{title}</div>
       <a href={talkSrc} target="_blank" rel="noopener noreferrer">{location}</a>
-      <br/>
       <div id={summaryId}>{summary}</div>
-      <br/>
     </div>
-  )
+  );
 };
+
+TalkDetail.propTypes = TALK_DETAIL;
 
 export default TalkDetail;
-
-TalkDetail.PropTypes = {
-  title: PropTypes.string.isRequired,
-  talkSrc: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  summaryId: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired,
-  talkComponent: PropTypes.node.isRequired
-};
