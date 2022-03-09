@@ -6,15 +6,19 @@ const WorkDetailHeader = ({ detail }) => {
     img,
     alt,
     companyUrl,
-    company,
     timeRange,
     title,
+    company,
   } = detail;
   return (
     <div>
-      <div className="title"><img src={img} alt={alt} height="60px" /></div>
       <div className="title">
-        <a href={companyUrl} target="_blank" rel="noopener noreferrer">{company}</a>
+        <a href={companyUrl} target="_blank" rel="noopener noreferrer">
+          <img src={img} alt={alt} height="60px" />
+        </a>
+      </div>
+      <div className="title">
+        {company && <a href={companyUrl} target="_blank" rel="noopener noreferrer">{company}</a> }
         <div className="time">{timeRange}</div>
         {title}
       </div>
