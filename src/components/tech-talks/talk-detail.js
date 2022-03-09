@@ -14,8 +14,8 @@ const TalkDetail = ({ detail }) => {
   return (
     <div className="col">
       { talkComponent }
-      <div>{title}</div>
-      <a href={talkSrc} target="_blank" rel="noopener noreferrer">{location}</a>
+      <div className="talk-title">{title}</div>
+      <a href={talkSrc} target="_blank" rel="noopener noreferrer" className="work-link">{location}</a>
       <div id={summaryId}>{summary}</div>
     </div>
   );

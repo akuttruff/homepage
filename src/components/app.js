@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
+  Routes,
   Route,
 } from 'react-router-dom';
 import Resume from '../containers/resume/index';
@@ -10,13 +11,13 @@ import Writing from '../containers/writing';
 
 const App = () => (
   <Router>
-    <div>
-      <Route exact path="/" component={Resume} />
-      <Route path="/work" component={Resume} />
-      <Route path="/talks" component={TechTalks} />
-      <Route path="/music" component={Music} />
-      <Route path="/writing" component={Writing} />
-    </div>
+    <Routes style={{ margin: 0 }}>
+      <Route exact path="/" element={<Resume />} />
+      <Route exact path="/work" element={<Resume />} />
+      <Route exact path="/talks" element={<TechTalks />} />
+      <Route exact path="/music" element={<Music />} />
+      <Route exact path="/writing" elementt={<Writing />} />
+    </Routes>
   </Router>
 );
 export default App;

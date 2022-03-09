@@ -5,7 +5,7 @@ import { ROUTE } from './prop-types';
 const Route = ({ route }) => {
   const { link, title } = route;
   return (
-    <li style={{ listStyleType: 'none', padding: '5px' }}>
+    <li className="route">
       <Link to={link} className="anchor-styles">{ title }</Link>
     </li>
   );

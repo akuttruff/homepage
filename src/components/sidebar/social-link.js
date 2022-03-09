@@ -2,11 +2,12 @@ import React from 'react';
 import { SOCIAL_LINK } from './prop-types';
 
 const SocialLink = ({ link }) => {
-  const { url, iconClass } = link;
+  const { url, icon } = link;
+
   return (
     <li className="nav-item">
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <i className={iconClass} />
+        {icon}
       </a>
     </li>
   );

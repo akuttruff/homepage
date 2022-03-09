@@ -20,7 +20,10 @@ const Music = () => {
           <ul className="description">
             <li>{description}</li>
             <li>
-              <a href={email}>{emailLabel}</a>
+              <a href={email}>
+                {emailLabel}
+                {' '}
+              </a>
               for more information
             </li>
           </ul>

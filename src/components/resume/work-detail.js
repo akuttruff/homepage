@@ -6,7 +6,7 @@ import { WORK_DETAIL } from './prop-types';
 const WorkDetail = ({ detail }) => {
   const { descriptionItems } = detail;
   return (
-    <div>
+    <>
       <WorkDetailHeader detail={detail} />
       <div className="description">
         <ul>
@@ -17,7 +17,7 @@ const WorkDetail = ({ detail }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

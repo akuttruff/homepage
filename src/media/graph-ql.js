@@ -10,7 +10,7 @@ const GraphQLVideo = () => {
       id={id}
       src={mediaSrc}
       controls
-      width="80%"
+      width="100%"
       poster={graphQLPoster}>
     </video>
   );

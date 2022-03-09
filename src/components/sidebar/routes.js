@@ -2,15 +2,8 @@ import React from 'react';
 import { ROUTES } from './prop-types';
 import Route from './route';
 
-const linkStyles = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  padding: '30px',
-};
-
 const Routes = ({ routes }) => (
-  <div style={linkStyles}>
+  <div className="routes">
     { routes.map((route, index) => <Route route={route} key={index} />) }
   </div>
 );
