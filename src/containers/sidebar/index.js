@@ -3,7 +3,7 @@ import SocialLinks from '../../components/sidebar/social-links';
 import Routes from '../../components/sidebar/routes';
 import { routes, socialLinks } from '../../data';
 
-const DESKTOP_MIN_WIDTH = 913;
+export const DESKTOP_MIN_WIDTH = 913;
 
 const CloseIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
@@ -90,4 +90,5 @@ const Sidebar = () => {
   return isDesktop ? <DesktopSidebar /> : <Hamburger />;
 };
 
+export { Hamburger, DesktopSidebar };
 export default Sidebar;
