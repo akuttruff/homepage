@@ -1,6 +1,6 @@
 import React from 'react';
 import WorkDetailList from '../../components/resume/work-detail-list';
-import { educationDetails, workDetails } from '../../data/index';
+import { educationDetails, workDetails } from '../../data/index.jsx';
 import Sidebar from '../sidebar';
 import EducationDetails from '../../components/resume/education-details';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { talkDetails } from '../../data/index';
+import { talkDetails } from '../../data/index.jsx';
 import Sidebar from '../sidebar';
 import TalkList from '../../components/tech-talks/talk-list';
 
