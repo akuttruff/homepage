@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,7 +9,7 @@ import Music from '../containers/music/index';
 import TechTalks from '../containers/tech-talks/index';
 import Writing from '../containers/writing';
 
-const App = () => (
+const App = (): React.JSX.Element => (
   <Router>
     <Routes>
       <Route path="/" element={<Resume />} />

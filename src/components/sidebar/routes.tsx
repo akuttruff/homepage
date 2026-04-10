@@ -1,5 +1,6 @@
 import React from 'react';
-import Route, { RouteType } from './route';
+import type { RouteType } from './route';
+import Route from './route';
 
 export interface RoutesType {
   routes: RouteType[];

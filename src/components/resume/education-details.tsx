@@ -1,11 +1,10 @@
-import React from 'react';
-import EducationDetail, { EducationDetailType } from './education-detail';
+import EducationDetail, { type EducationDetailType } from './education-detail';
 
 interface EducationDetailsProps {
   educationDetails: EducationDetailType[];
 }
 
-const EducationDetails = ({ educationDetails }: EducationDetailsProps) => (
+const EducationDetails = ({ educationDetails }: EducationDetailsProps): React.JSX.Element => (
   <div>
     <h1 className="resume-subhead">Education</h1>
     <div className="edu">

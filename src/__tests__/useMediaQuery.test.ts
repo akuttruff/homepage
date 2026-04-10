@@ -1,13 +1,19 @@
 import { renderHook, act } from '@testing-library/react';
 import useMediaQuery from '../components/hooks/useMediaQuery';
 
+interface MatchMediaMock {
+  matches: boolean;
+  addEventListener: (type: string, listener: EventListener) => void;
+  removeEventListener: (type: string, listener: EventListener) => void;
+}
+
 describe('useMediaQuery', () => {
   let matchMediaMock: jest.Mock;
 
   beforeEach(() => {
     // Setup mock for window.matchMedia
     matchMediaMock = jest.fn();
-    (window as any).matchMedia = matchMediaMock;
+    (window as unknown as { matchMedia: typeof matchMediaMock }).matchMedia = matchMediaMock;
   });
 
   afterEach(() => {
@@ -15,11 +21,12 @@ describe('useMediaQuery', () => {
   });
 
   it('returns false for a query that does not match', () => {
-    matchMediaMock.mockReturnValue({
+    const mockMediaQuery: MatchMediaMock = {
       matches: false,
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
-    });
+    };
+    matchMediaMock.mockReturnValue(mockMediaQuery);
 
     const { result } = renderHook(() => useMediaQuery('(min-width: 1024px)'));
 
@@ -27,11 +34,12 @@ describe('useMediaQuery', () => {
   });
 
   it('returns true for a query that matches', () => {
-    matchMediaMock.mockReturnValue({
+    const mockMediaQuery: MatchMediaMock = {
       matches: true,
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
-    });
+    };
+    matchMediaMock.mockReturnValue(mockMediaQuery);
 
     const { result } = renderHook(() => useMediaQuery('(max-width: 500px)'));
 
@@ -40,11 +48,11 @@ describe('useMediaQuery', () => {
 
   it('updates when the media query state changes', () => {
     let currentMatches = false;
-    let listenerCallback: ((event: any) => void) | null = null;
+    let listenerCallback: ((event: { matches: boolean }) => void) | null = null;
 
     matchMediaMock.mockReturnValue({
       get matches() { return currentMatches; },
-      addEventListener: (event: string, callback: (event: any) => void) => {
+      addEventListener: (event: string, callback: (event: { matches: boolean }) => void) => {
         if (event === 'change') {
           listenerCallback = callback;
         }
@@ -60,7 +68,7 @@ describe('useMediaQuery', () => {
     // Simulate media query change to true
     act(() => {
       currentMatches = true;
-      if (listenerCallback) listenerCallback({ matches: true } as any);
+      if (listenerCallback) listenerCallback({ matches: true });
     });
 
     // Rerender to pick up the change
@@ -71,7 +79,7 @@ describe('useMediaQuery', () => {
     // Simulate media query change back to false
     act(() => {
       currentMatches = false;
-      if (listenerCallback) listenerCallback({ matches: false } as any);
+      if (listenerCallback) listenerCallback({ matches: false });
     });
 
     rerender();

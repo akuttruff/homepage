@@ -1,9 +1,6 @@
-import React from 'react';
 import SkywardBlog from '../../components/writing/skyward-blog';
 import Sidebar from '../sidebar/index';
 import skywardBlog from '../../data/skyward-blog';
-
-interface WritingProps {}
 
 const Writing = () => (
   <div>

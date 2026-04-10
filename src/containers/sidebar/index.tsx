@@ -70,8 +70,6 @@ const Hamburger = ({ isOpen, setIsOpen }: HamburgerProps) => {
   );
 };
 
-interface DesktopSidebarProps {}
-
 const DesktopSidebar = () => (
   <div className="sidebar">
     <header className="header">

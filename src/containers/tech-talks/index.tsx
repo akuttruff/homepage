@@ -1,9 +1,6 @@
-import React from 'react';
 import { talkDetails } from '../../data/index.tsx';
 import Sidebar from '../sidebar';
 import TalkList from '../../components/tech-talks/talk-list';
-
-interface TechTalksProps {}
 
 const TechTalks = () => (
   <div>

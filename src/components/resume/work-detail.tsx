@@ -1,4 +1,5 @@
-import WorkDetailHeader, { WorkDetailType as WorkDetailHeaderType } from './work-detail-header';
+import WorkDetailHeader from './work-detail-header';
+import type { WorkDetailType as WorkDetailHeaderType } from './work-detail-header';
 
 export interface WorkDetailType extends WorkDetailHeaderType {
   descriptionItems: string[];
@@ -8,7 +9,7 @@ interface WorkDetailProps {
   detail: WorkDetailType;
 }
 
-const WorkDetail = ({ detail }: WorkDetailProps) => {
+const WorkDetail = ({ detail }: WorkDetailProps): React.JSX.Element => {
   const { descriptionItems } = detail;
   return (
     <>
