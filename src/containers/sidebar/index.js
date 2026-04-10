@@ -28,13 +28,15 @@ const Hamburger = () => {
         setMenuState(false);
       }
     };
-    window.addEventListener('click', handler);
+    if (isOpen) {
+      window.addEventListener('click', handler);
+    }
     return () => window.removeEventListener('click', handler);
   }, [isOpen]);
 
-  const toggleMenuState = () => {
-    if (isOpen) setMenuState(false);
-    if (!isOpen) setMenuState(true);
+  const toggleMenuState = (e) => {
+    e.stopPropagation();
+    setMenuState(!isOpen);
   };
 
   return (
@@ -42,7 +44,12 @@ const Hamburger = () => {
       ref={menuRef}
       className="hamburger"
       onClick={toggleMenuState}
-      onKeyUp={toggleMenuState}
+      onKeyUp={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.stopPropagation();
+          setMenuState(!isOpen);
+        }
+      }}
       role="button"
       tabIndex={0}
     >
