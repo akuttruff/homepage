@@ -5,7 +5,6 @@
   "repository": "http://www.amiekuttruff.com",
   "author": "Amie Kuttruff",
   "dependencies": {
-    "babel-jest": "^24.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
