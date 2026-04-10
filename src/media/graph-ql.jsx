@@ -11,7 +11,9 @@ const GraphQLVideo = () => {
       src={mediaSrc}
       controls
       width="100%"
-      poster={graphQLPoster}>
+      poster={graphQLPoster}
+      aria-label="GraphQL video presentation">
+      <track kind="captions" />
     </video>
   );
 };

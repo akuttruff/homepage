@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
-import { flightInsightsPhoto } from '../../img/index';
+import { flightInsightsPhoto } from '../../img/index.js';
 import BLOG from './prop-types';
 
 const textStyles = {
@@ -27,8 +27,8 @@ const SkywardBlog = ({ skywardBlog }) => (
       <figcaption>Flight Insights, Skyward IO</figcaption>
     </figure>
     <div style={{ padding: '4em' }}>
-      {skywardBlog.map(paragraph => (
-        <div style={textStyles}>
+      {skywardBlog.map((paragraph, index) => (
+        <div key={index} style={textStyles}>
           <div dangerouslySetInnerHTML={{ __html: paragraph }} />
           <br />
         </div>
