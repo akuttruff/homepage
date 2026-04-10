@@ -4,3 +4,4 @@ package-lock.json
 build/
 yarn.lock
 sitemap.xml
+.qwen
