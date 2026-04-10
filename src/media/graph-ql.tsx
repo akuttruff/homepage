@@ -1,7 +1,4 @@
-import React from 'react';
 import graphQLPoster from '../img/GraphQLPoster.jpg';
-
-interface GraphQLVideoProps {}
 
 const GraphQLVideo = (): React.ReactNode => {
   const id = 'graph-ql';

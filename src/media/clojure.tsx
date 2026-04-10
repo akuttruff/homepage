@@ -1,7 +1,4 @@
-import React from 'react';
 import clojureWestPoster from '../img/ClojureWestPoster.jpg';
-
-interface ClojureVideoProps {}
 
 const ClojureVideo = (): React.ReactNode => {
   const id = 'clojure-west';

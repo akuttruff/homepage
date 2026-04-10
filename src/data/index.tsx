@@ -1,5 +1,14 @@
 import React from 'react';
 import { ClojureVideo, GraphQLVideo } from '../media';
+import {
+  jamaLogo,
+  littleBirdLogo,
+  renewLogo,
+  skywardLogo,
+  zendeskLogo,
+  violinPhoto,
+  flightInsightsPhoto,
+} from '../img';
 
 export interface RouteType {
   link: string;
@@ -90,7 +99,7 @@ const musicDetails: MusicDetailsType = {
   description: 'Classical violinist available for orchestra or chamber ensemble work',
   email: 'mailto:amie.kuttruff@gmail.com',
   emailLabel: 'Email',
-  img: '',
+  img: violinPhoto,
 };
 
 export interface TalkDetailType {
@@ -132,7 +141,7 @@ export interface WorkDetailType {
 
 const workDetails: WorkDetailType[] = [
   {
-    img: '',
+    img: zendeskLogo,
     alt: 'Zendesk logo',
     companyUrl: 'https://www.zendesk.com',
     company: null,
@@ -145,7 +154,7 @@ const workDetails: WorkDetailType[] = [
     ],
   },
   {
-    img: '',
+    img: skywardLogo,
     alt: 'Skyward logo',
     companyUrl: 'https://skyward.io/enterprise-solutions/',
     company: 'SKYWARD',
@@ -158,7 +167,7 @@ const workDetails: WorkDetailType[] = [
       'Fosters collaborative Agile practices to help our teams develop quality software in the innovative industry of enterprise drone flight',
     ],
   }, {
-    img: '',
+    img: renewLogo,
     alt: 'Renew Financial logo',
     companyUrl: 'https://renewfinancial.com/',
     company: 'RENEW FINANCIAL',
@@ -172,7 +181,7 @@ const workDetails: WorkDetailType[] = [
       'Enthusiastically supported group and pair programming to promote open communication within an agile product development environment',
     ],
   }, {
-    img: '',
+    img: jamaLogo,
     alt: 'Jama Software logo',
     companyUrl: 'https://www.jamasoftware.com',
     company: 'JAMA SOFTWARE',
@@ -185,7 +194,7 @@ const workDetails: WorkDetailType[] = [
       'Contributed to the development of an autoscaled Java microservice using AWS ECS',
     ],
   }, {
-    img: '',
+    img: littleBirdLogo,
     alt: 'Little Bird logo',
     companyUrl: 'https://techcrunch.com/2016/11/17/sprinklr-acquires-littlebird-a-tool-for-finding-experts-on-anything-via-twitter',
     company: 'LITTLE BIRD',

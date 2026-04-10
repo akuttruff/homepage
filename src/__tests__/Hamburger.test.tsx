@@ -2,10 +2,20 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 
 // Mock all dependencies before importing
-jest.mock('../components/sidebar/routes', () => ({ routes }: { routes: any[] }) => (
+interface MockRoute {
+  link: string;
+  title: string;
+}
+
+interface MockSocialLink {
+  url: string;
+  icon: React.ReactNode;
+}
+
+jest.mock('../components/sidebar/routes', () => ({ routes }: { routes: MockRoute[] }) => (
   <div data-testid="mock-routes">Routes</div>
 ));
-jest.mock('../components/sidebar/social-links', () => ({ socialLinks }: { socialLinks: any[] }) => (
+jest.mock('../components/sidebar/social-links', () => ({ socialLinks }: { socialLinks: MockSocialLink[] }) => (
   <div data-testid="mock-social-links">SocialLinks</div>
 ));
 jest.mock('../data', () => ({

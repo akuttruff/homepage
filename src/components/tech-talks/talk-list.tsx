@@ -1,5 +1,6 @@
 import React from 'react';
-import TalkDetail, { TalkDetailType } from './talk-detail';
+import type { TalkDetailType } from './talk-detail';
+import TalkDetail from './talk-detail';
 
 interface TalkListProps {
   talkDetails: TalkDetailType[];

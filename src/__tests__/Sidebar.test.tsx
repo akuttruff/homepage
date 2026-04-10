@@ -3,10 +3,20 @@ import { render, screen, act } from '@testing-library/react';
 import Sidebar, { DesktopSidebar, Hamburger, DESKTOP_MIN_WIDTH } from '../containers/sidebar/index';
 
 // Mock the child components
-jest.mock('../components/sidebar/routes', () => ({ routes }: { routes: any[] }) => (
+interface MockRoute {
+  link: string;
+  title: string;
+}
+
+interface MockSocialLink {
+  url: string;
+  icon: React.ReactNode;
+}
+
+jest.mock('../components/sidebar/routes', () => ({ routes }: { routes: MockRoute[] }) => (
   <div data-testid="mock-routes">Routes</div>
 ));
-jest.mock('../components/sidebar/social-links', () => ({ socialLinks }: { socialLinks: any[] }) => (
+jest.mock('../components/sidebar/social-links', () => ({ socialLinks }: { socialLinks: MockSocialLink[] }) => (
   <div data-testid="mock-social-links">SocialLinks</div>
 ));
 jest.mock('../data', () => ({
@@ -65,7 +75,7 @@ describe('Sidebar', () => {
 
       // Resize to desktop and trigger re-render
       act(() => {
-        (window as any).innerWidth = 1024;
+        (window as unknown as { innerWidth: number }).innerWidth = 1024;
         window.dispatchEvent(new Event('resize'));
       });
 

@@ -1,8 +1,5 @@
-import React from 'react';
 import Sidebar from '../sidebar';
 import { musicDetails } from '../../data';
-
-interface MusicProps {}
 
 const Music = () => {
   const {
