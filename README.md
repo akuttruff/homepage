@@ -1,7 +1,7 @@
 # Homepage for [Amie Kuttruff](http://www.amiekuttruff.com)
 ### Resume + links to talks, music projects, and social accounts
 
-This project is my personal homepage, built with **React + Vite**. It features a modern development experience with fast hot module replacement, TypeScript support, and optimized production builds.
+This project ports my old website over to React + Vite. My code lives in an [AWS S3](https://aws.amazon.com/s3/) bucket, and I host my site with [Google Domains](https://domains.google/).
 
 ## Tech Stack
 
