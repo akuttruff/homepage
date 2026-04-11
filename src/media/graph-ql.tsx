@@ -2,7 +2,7 @@ import graphQLPoster from '../img/GraphQLPoster.jpg';
 
 const GraphQLVideo = (): React.ReactNode => {
   const id = 'graph-ql';
-  const mediaSrc = 'https://s3-us-west-2.amazonaws.com/akuttruff-media/GraphQL.mp4';
+  const mediaSrc = '/GraphQL.mp4';
 
   return (
     <video
@@ -11,10 +11,10 @@ const GraphQLVideo = (): React.ReactNode => {
       controls
       width="100%"
       poster={graphQLPoster}
-      muted
-      playsInline
+      muted={true}
+      playsInline={true}
+      loop
       aria-label="GraphQL video presentation">
-      <track kind="captions" />
     </video>
   );
 };
