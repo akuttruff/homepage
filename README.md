@@ -1,3 +1,49 @@
-# Homepage for [Amie Kuttruff](http://www.amiekuttruff.com) 
+# Homepage for [Amie Kuttruff](http://www.amiekuttruff.com)
 ### Resume + links to talks, music projects, and social accounts
-This project ports my old website over to React + [React-Router](https://reacttraining.com/react-router/core/guides/philosophy). My code lives in an [AWS S3](https://aws.amazon.com/s3/) bucket, and I host my site with [Google Domains](https://domains.google/).
+
+This project is my personal homepage, built with **React + Vite**. It features a modern development experience with fast hot module replacement, TypeScript support, and optimized production builds.
+
+## Tech Stack
+
+- **Framework:** React 18 with TypeScript
+- **Routing:** React Router DOM v6
+- **Build Tool:** Vite 5 (fast dev server & optimized builds)
+- **Styling:** CSS with Google Fonts (Lato)
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:3000)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run tests
+npm test
+
+# Lint & format
+npm run lint
+npm run format
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable React components
+├── containers/     # Page-level components
+├── data/           # Site content & data
+├── img/            # Static images
+└── media/          # Additional assets
+```
+
+## Deployment
+
+My code lives in an [AWS S3](https://aws.amazon.com/s3/) bucket, and I host my site with [Google Domains](https://domains.google/).
