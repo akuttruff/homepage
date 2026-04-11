@@ -2,7 +2,7 @@ import graphQLPoster from '../img/GraphQLPoster.jpg';
 
 const GraphQLVideo = (): React.ReactNode => {
   const id = 'graph-ql';
-  const mediaSrc = '/GraphQL.mp4';
+  const mediaSrc = 'https://amiekuttruff-media.s3.us-west-2.amazonaws.com/GraphQL.mp4'
 
   return (
     <video
