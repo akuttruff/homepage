@@ -1,0 +1,14 @@
+const skywardBlog = [
+  '<p>When I first joined Skyward in 2018, the company was using a legacy AngularJS codebase that had been developed over several years. This codebase was becoming increasingly difficult to maintain and extend, with technical debt piling up and developer velocity slowing down.</p>',
+  '<p>One of the first initiatives I worked on was a proof of concept to evaluate potential replacement frameworks. We considered several options including React, Vue.js, and Angular (the newer version). After careful evaluation, we chose React due to its component-based architecture, strong community support, and the flexibility it offers for gradual migration.</p>',
+  '<p>The migration strategy we adopted was a "Strangler Fig" pattern, where we gradually replaced parts of the legacy application while continuing to deliver new features. This allowed us to maintain business continuity while modernizing our codebase incrementally.</p>',
+  '<p>One of the key challenges we faced was maintaining consistency across both the legacy AngularJS code and our new React components. We developed a set of design system guidelines and component libraries to ensure a consistent user experience.</p>',
+  '<p>Another significant challenge was the data layer. Our legacy application used a combination of REST APIs and custom JavaScript objects for state management. We decided to implement GraphQL with Apollo Client to provide a more robust and efficient data layer.</p>',
+  '<p>The transition to TypeScript was another major initiative. We found that the type system helped catch bugs early, improved code documentation, and made refactoring safer. We gradually converted our JavaScript files to TypeScript, starting with the most critical components.</p>',
+  '<p>Testing was a priority throughout the migration. We maintained our existing Jasmine/Karma test suite for AngularJS components while adding Jest and React Testing Library for our new React components. This hybrid approach gave us confidence in both the legacy and new code.</p>',
+  '<p>As we migrated more functionality, we began to see significant improvements in developer productivity. New features could be developed faster, and the codebase was more maintainable and easier to understand.</p>',
+  '<p>The migration was completed over approximately two years, with ongoing maintenance and improvements continuing since then. The result has been a modern, maintainable codebase that continues to serve Skyward well.</p>',
+  '<p>In retrospect, the key to our success was taking a gradual approach, maintaining test coverage throughout, and investing in developer training and documentation. The transition was challenging but ultimately rewarding for both the development team and our end users.</p>',
+];
+
+export default skywardBlog;
