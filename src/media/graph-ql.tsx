@@ -11,6 +11,8 @@ const GraphQLVideo = (): React.ReactNode => {
       controls
       width="100%"
       poster={graphQLPoster}
+      muted
+      playsInline
       aria-label="GraphQL video presentation">
       <track kind="captions" />
     </video>
