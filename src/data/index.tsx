@@ -163,8 +163,7 @@ const workDetails: WorkDetailType[] = [
     descriptionItems: [
       'Designs, develops, and implements new capabilities for the Skyward Cloud Platform while safely deprecating and removing our legacy AngularJS framework',
       'Architects new features in React and Redux, with a passion for coherent state management and ease of testability',
-      'Works closely with UX specialists to build intuitive, simple, and elegant user interfaces',
-      'Fosters collaborative Agile practices to help our teams develop quality software in the innovative industry of enterprise drone flight',
+      'Works closely with UX specialists to build intuitive, simple, and elegant user interfaces'
     ],
   }, {
     img: renewLogo,
