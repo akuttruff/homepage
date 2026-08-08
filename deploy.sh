@@ -1,8 +1,13 @@
 #!/bin/bash
 
-APP_ID="REDACTED_APP_ID"
-BRANCH="production"
-PROFILE="amplify-amie"
+APP_ID="${AWS_AMPLIFY_APP_ID}"
+if [ -z "$APP_ID" ]; then
+  echo "❌ Error: AWS_AMPLIFY_APP_ID environment variable not set"
+  exit 1
+fi
+
+BRANCH="${AWS_AMPLIFY_BRANCH:-production}"
+PROFILE="${AWS_AMPLIFY_PROFILE:-amplify-amie}"
 
 echo "🔨 Building project..."
 npm run build

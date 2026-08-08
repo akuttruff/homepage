@@ -28,3 +28,9 @@ amplifytools.xcconfig
 **.sample
 #amplify-do-not-edit-end
 deploy.zip
+
+# AWS Amplify - do not commit
+aws-credentials*
+*.pem
+*.key
+deploy.sh.env
