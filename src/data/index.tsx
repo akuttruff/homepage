@@ -144,7 +144,7 @@ const workDetails: WorkDetailType[] = [
     img: zendeskLogo,
     alt: 'Zendesk logo',
     companyUrl: 'https://www.zendesk.com',
-    company: null,
+    company: 'ZENDESK',
     timeRange: '(August 2021 - present)',
     title: 'Senior Software Engineer',
     descriptionItems: [
