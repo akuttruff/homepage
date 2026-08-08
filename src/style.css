@@ -9,6 +9,12 @@
     outline: 0
 }
 
+/* Remove tap highlight on mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
 body {
     margin: 0
 }
@@ -17,6 +23,12 @@ a {
     text-decoration: none;
     color: #3d92c9;
     outline: 0;
+}
+
+/* Focus styles for accessibility (keyboard navigation only) */
+a:focus-visible {
+    outline: 2px solid #3d92c9;
+    outline-offset: 2px;
 }
 
 .bi {
@@ -31,6 +43,12 @@ a:hover, a:focus, .bi-twitter:hover, .bi-github:hover, .bi-linkedin:hover {
 i {
     font-size: 40px;
     color: white;
+}
+
+/* Focus styles for accessibility (keyboard navigation only) */
+i:focus-visible {
+    outline: 2px solid #3d92c9;
+    outline-offset: 2px;
 }
 
 i:hover, i:focus {
