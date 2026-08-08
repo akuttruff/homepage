@@ -146,7 +146,7 @@ const workDetails: WorkDetailType[] = [
     companyUrl: 'https://www.zendesk.com',
     company: null,
     timeRange: '(August 2021 - present)',
-    title: 'Senior Software Engineer, Tech Lead',
+    title: 'Senior Software Engineer',
     descriptionItems: [
       'Develops new frontend functionality for the Custom Data and Logic team using TypeScript, Ruby, Java, and GraphQL',
       'Collaborates with Zendesk\'s many feature teams to maintain and improve the Zendesk Platform',
