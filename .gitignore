@@ -38,3 +38,6 @@ deploy.sh.env
 # Deployment files (should not be committed)
 *.zip
 deploy-*.zip
+
+# Backup files (editor temp files)
+*~
