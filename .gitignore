@@ -34,3 +34,7 @@ aws-credentials*
 *.pem
 *.key
 deploy.sh.env
+
+# Deployment files (should not be committed)
+*.zip
+deploy-*.zip
