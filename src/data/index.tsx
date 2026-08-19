@@ -156,7 +156,7 @@ const workDetails: WorkDetailType[] = [
   {
     img: skywardLogo,
     alt: 'Skyward logo',
-    companyUrl: 'https://skyward.io/enterprise-solutions/',
+    companyUrl: 'https://techcrunch.com/2017/02/16/verizon-buys-skyward-a-drone-operations-company/',
     company: 'SKYWARD',
     timeRange: '(July 2018 - August 2021)',
     title: 'Senior Front End Engineer',
