@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import SocialLinks from '../../components/sidebar/social-links';
 import Routes from '../../components/sidebar/routes';
 import { routes, socialLinks } from '../../data';
+import { DESKTOP_MIN_WIDTH } from '../../components/breakpoints';
 
-export const DESKTOP_MIN_WIDTH = 913;
+export { DESKTOP_MIN_WIDTH };
 
 const CloseIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">

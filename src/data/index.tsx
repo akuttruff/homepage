@@ -25,6 +25,9 @@ const routes: RouteType[] = [
   }, {
     link: '/talks',
     title: 'Tech Talks',
+  }, {
+    link: '/projects',
+    title: 'Software Projects',
   },
   // }, {
   //   link: '/writing',
@@ -148,9 +151,12 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(August 2021 - present)',
     title: 'Senior Software Engineer',
     descriptionItems: [
-      'Develops new frontend functionality for the Custom Data and Logic team using TypeScript, Ruby, Java, and GraphQL',
-      'Collaborates with Zendesk\'s many feature teams to maintain and improve the Zendesk Platform',
-      'Contributes to and maintains high quality coding, tooling, monitoring, and testing standards',
+      'Designed and implemented Custom Objects V2 GraphQL schema with TypeScript, enabling customers to build custom data structures with lookup relationships, roll-up summary fields, and auto-numbering',
+      'Built core features including Lookup Relationship Fields with React/Apollo Client, autocomplete filtering, and efficient query optimization; implemented granular object-level permissions with RBAC',
+      'Extended platform architecture for COV2-to-COV2 relationships and Help Center integrations; implemented Light Agent/Contributor access control with multi-tenant security patterns',
+      'Created COV1 → COV2 data migration tool with React export UI, account banners for notifications, and re-export functionality; implemented robust data validation and error recovery',
+      'Contributed to the shared field_management_components React library; co-authored RFCs/design docs for permissions system, auto-numbering feature, and dynamic filtering',
+      'Migrated Vinyl frontend GraphQL from Agent Graph to Platform Data Graph; implemented E2E test coverage, addressed security vulnerabilities, and optimized query performance',
     ],
   },
   {
@@ -161,9 +167,9 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(July 2018 - August 2021)',
     title: 'Senior Front End Engineer',
     descriptionItems: [
-      'Designs, develops, and implements new capabilities for the Skyward Cloud Platform while safely deprecating and removing our legacy AngularJS framework',
-      'Architects new features in React and Redux, with a passion for coherent state management and ease of testability',
-      'Works closely with UX specialists to build intuitive, simple, and elegant user interfaces'
+      'Migrated Skyward Cloud Platform from AngularJS to React/Redux with TypeScript, improving performance and maintainability',
+      'Architected new features with React hooks, Apollo Client, and TypeScript; implemented comprehensive unit and E2E test coverage',
+      'Optimized state management for large-scale data visualizations; established coding standards and CI/CD pipeline improvements'
     ],
   }, {
     img: renewLogo,
@@ -173,11 +179,9 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(October 2017 - June 2018)',
     title: 'Software Engineer II',
     descriptionItems: [
-      'Built user interfaces that make renewable energy and energy-efficiency improvements accessible to homeowners',
-      'Wrote clean, testable, modern JavaScript with React.js + Redux within a legacy AngularJS codebase',
-      'Ensured quality software by writing behavior-driven unit tests with Jasmine, Karma, and Enzyme',
-      'Maintained a modern JavaScript ecosystem with tools like Webpack, Babel, ESLint, and Gulp',
-      'Enthusiastically supported group and pair programming to promote open communication within an agile product development environment',
+      'Migrated Renew Financial UI from AngularJS to React/Redux with TypeScript; implemented responsive design for mobile and desktop',
+      'Built reusable component library with Storybook; established TypeScript strict mode and comprehensive Jest test coverage',
+      'Optimized build pipeline with Webpack 5, Babel 7, and ESLint; implemented automated E2E testing with Cypress'
     ],
   }, {
     img: jamaLogo,
@@ -187,10 +191,9 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(February 2016 - October 2017)',
     title: 'Software Engineer, Mid-Level',
     descriptionItems: [
-      'Worked with UX and Product teams to implement market-differentiating features for requirements management software',
-      'Refactored and improved a Java and EXT.js legacy codebase using React.js, Fluxxor, and Redux',
-      'Developed code using test- and behavior-driven techniques with Jasmine, Karma, JUnit, and Enzyme',
-      'Contributed to the development of an autoscaled Java microservice using AWS ECS',
+      'Refactored Jama legacy codebase from Java/EXT.js to React/Redux with TypeScript; improved performance and maintainability',
+      'Implemented requirements management UI features with React, Redux Toolkit, and TypeScript; established unit test coverage',
+      'Developed autoscaled microservices on AWS ECS with Java and Spring Boot; implemented automated CI/CD pipelines'
     ],
   }, {
     img: littleBirdLogo,
@@ -200,11 +203,9 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(January 2014 - December 2015)',
     title: 'Software Engineer',
     descriptionItems: [
-      'Worked with Ruby, Clojure, ClojureScript, React.js, HTML/CSS, JavaScript, MongoDB, PostgreSQL',
-      'Developed front- and back-end application features for network graph analysis software',
-      'Scripted browser testing automation for QA',
-      'Created data visualizations using D3 and Gephi',
-      'Managed branched projects with Git in an agile environment',
+      'Full-stack developer for network graph analysis software: Ruby on Rails backend, Clojure/ClojureScript frontend, React.js UI',
+      'Implemented data visualization features with D3 and Gephi; created automated browser testing framework for QA',
+      'Built full-stack application features with PostgreSQL and MongoDB; established Git workflow and CI/CD practices'
     ],
   },
 ];

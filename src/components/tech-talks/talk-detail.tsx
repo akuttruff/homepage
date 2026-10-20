@@ -24,11 +24,11 @@ const TalkDetail = ({ detail }: TalkDetailProps) => {
   } = detail;
 
   return (
-    <div className="col">
+    <div className="col talk">
       {talkComponent}
       <div className="talk-title">{title}</div>
       <a href={talkSrc} target="_blank" rel="noopener noreferrer" className="work-link">{location}</a>
-      <div id={summaryId}>{summary}</div>
+      <div id={summaryId} className="project-summary">{summary}</div>
     </div>
   );
 };

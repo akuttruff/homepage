@@ -11,19 +11,18 @@ interface WorkDetailProps {
 
 const WorkDetail = ({ detail }: WorkDetailProps): React.JSX.Element => {
   const { descriptionItems } = detail;
+
   return (
-    <>
+    <div className="job">
       <WorkDetailHeader detail={detail} />
       <div className="description">
         <ul>
           {descriptionItems.map((item, index) => (
-            <li key={index}>
-              {item}
-            </li>
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
