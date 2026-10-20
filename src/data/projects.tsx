@@ -77,15 +77,6 @@ const projectDetails: ProjectDetailType[] = [
       </>
     ),
   }, {
-    title: 'CAIRN',
-    repoUrl: 'https://github.com/akuttruff/cairn',
-    repoLabel: 'github.com/akuttruff/cairn',
-    icon: cairnIcon,
-    onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
-    onPhone: [cairnDayShot, cairnWeekShot],
-    summaryId: 'cairn-summary',
-    summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals. React 19, TypeScript, Vite, Node 24 with node:sqlite.',
-  }, {
     title: 'WHETSTONE',
     repoUrl: 'https://github.com/akuttruff/whetstone',
     repoLabel: 'github.com/akuttruff/whetstone',
@@ -94,6 +85,15 @@ const projectDetails: ProjectDetailType[] = [
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
     summary: 'Whetstone is an interview practice tool with a local model as my reviewer. The server runs my solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved. React 19, TypeScript, Vite, CodeMirror, Node 24 with node:sqlite, served by oMLX or LM Studio.',
+  }, {
+    title: 'CAIRN',
+    repoUrl: 'https://github.com/akuttruff/cairn',
+    repoLabel: 'github.com/akuttruff/cairn',
+    icon: cairnIcon,
+    onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
+    onPhone: [cairnDayShot, cairnWeekShot],
+    summaryId: 'cairn-summary',
+    summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals. React 19, TypeScript, Vite, Node 24 with node:sqlite.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
