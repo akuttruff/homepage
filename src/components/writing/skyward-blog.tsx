@@ -1,9 +1,8 @@
-/* eslint-disable react/no-danger */
 import React from 'react';
 import { flightInsightsPhoto } from '../../img/index.js';
 
 interface SkywardBlogProps {
-  skywardBlog: string[];
+  skywardBlog: React.ReactNode[];
 }
 
 const textStyles = {
@@ -32,7 +31,7 @@ const SkywardBlog = ({ skywardBlog }: SkywardBlogProps) => (
     <div style={{ padding: '4em' }}>
       {skywardBlog.map((paragraph, index) => (
         <div key={index} style={textStyles}>
-          <div dangerouslySetInnerHTML={{ __html: paragraph }} />
+          {paragraph}
           <br />
         </div>
       ))}

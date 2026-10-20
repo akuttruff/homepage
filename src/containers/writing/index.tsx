@@ -1,6 +1,6 @@
 import SkywardBlog from '../../components/writing/skyward-blog';
 import Sidebar from '../sidebar/index';
-import skywardBlog from '../../data/skyward-blog';
+import skywardBlog from '../../data/skyward-blog.tsx';
 
 const Writing = () => (
   <div>
