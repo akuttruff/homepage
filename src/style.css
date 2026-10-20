@@ -297,6 +297,9 @@ img {
 
 /* The name and repo, in the resume's header sizes: the name a link like a company name, the path in the date grey. */
 .project-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
     font-weight: 400;
     font-size: 1.3em;
     letter-spacing: 1.1px;
@@ -307,13 +310,13 @@ img {
     font-weight: 400;
 }
 
+/* Centred on the title's line box, the height of a capital letter and a little more. */
 .project-icon {
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.4em;
+    height: 1.4em;
     padding: 0;
-    margin-right: 0.5em;
     border-radius: 22%;
-    vertical-align: middle;
+    flex: 0 0 auto;
 }
 
 .project-repo {
