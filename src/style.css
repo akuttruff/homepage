@@ -307,6 +307,15 @@ img {
     font-weight: 400;
 }
 
+.project-icon {
+    width: 1.6em;
+    height: 1.6em;
+    padding: 0;
+    margin-right: 0.5em;
+    border-radius: 22%;
+    vertical-align: middle;
+}
+
 .project-repo {
     display: block;
     color: #666;

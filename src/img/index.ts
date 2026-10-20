@@ -16,6 +16,10 @@ import whetstoneDesktop from './projects/whetstone-desktop.png';
 import orreryToday from './projects/orrery-today.png';
 import orreryReading from './projects/orrery-reading.png';
 import orreryWeek from './projects/orrery-week.png';
+import lmChatIcon from './projects/lm-chat-icon.png';
+import cairnIcon from './projects/cairn-icon.png';
+import whetstoneIcon from './projects/whetstone-icon.png';
+import orreryIcon from './projects/orrery-icon.png';
 
 export {
   jamaLogo,
@@ -36,4 +40,8 @@ export {
   orreryToday,
   orreryReading,
   orreryWeek,
+  lmChatIcon,
+  cairnIcon,
+  whetstoneIcon,
+  orreryIcon,
 };

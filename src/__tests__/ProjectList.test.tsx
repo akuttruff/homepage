@@ -20,6 +20,7 @@ describe('ProjectList', () => {
       title: 'LM CHAT',
       repoUrl: 'https://github.com/akuttruff/lm-chat',
       repoLabel: 'github.com/akuttruff/lm-chat',
+      icon: 'lm-chat-icon.png',
       onDesktop: [
         { src: 'lm-chat-thread.png', alt: 'LM Chat, a thread' },
         { src: 'lm-chat-chats.png', alt: 'LM Chat, the chats' },
@@ -31,6 +32,7 @@ describe('ProjectList', () => {
       title: 'CAIRN',
       repoUrl: 'https://github.com/akuttruff/cairn',
       repoLabel: 'github.com/akuttruff/cairn',
+      icon: 'cairn-icon.png',
       onDesktop: [day, add, week],
       onPhone: [day, week],
       summaryId: 'cairn-summary',

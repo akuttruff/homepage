@@ -11,6 +11,10 @@ import {
   orreryToday,
   orreryReading,
   orreryWeek,
+  lmChatIcon,
+  cairnIcon,
+  whetstoneIcon,
+  orreryIcon,
 } from '../img';
 
 export interface ProjectImageType {
@@ -22,6 +26,8 @@ export interface ProjectDetailType {
   title: string;
   repoUrl: string;
   repoLabel: string;
+  /** The app's own icon, beside its name. */
+  icon: string;
   /** The screenshots a desktop shows, side by side when there are several. */
   onDesktop: ProjectImageType[];
   /** The screenshots a phone shows. */
@@ -54,6 +60,7 @@ const projectDetails: ProjectDetailType[] = [
     title: 'LM CHAT',
     repoUrl: 'https://github.com/akuttruff/lm-chat',
     repoLabel: 'github.com/akuttruff/lm-chat',
+    icon: lmChatIcon,
     onDesktop: lmChatPhones,
     onPhone: [lmChatWide],
     summaryId: 'lm-chat-summary',
@@ -73,6 +80,7 @@ const projectDetails: ProjectDetailType[] = [
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
     repoLabel: 'github.com/akuttruff/cairn',
+    icon: cairnIcon,
     onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
     onPhone: [cairnDayShot, cairnWeekShot],
     summaryId: 'cairn-summary',
@@ -81,6 +89,7 @@ const projectDetails: ProjectDetailType[] = [
     title: 'WHETSTONE',
     repoUrl: 'https://github.com/akuttruff/whetstone',
     repoLabel: 'github.com/akuttruff/whetstone',
+    icon: whetstoneIcon,
     onDesktop: [whetstoneWide],
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
@@ -89,6 +98,7 @@ const projectDetails: ProjectDetailType[] = [
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
     repoLabel: 'github.com/akuttruff/orrery',
+    icon: orreryIcon,
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
