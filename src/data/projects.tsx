@@ -28,6 +28,8 @@ export interface ProjectDetailType {
   repoLabel: string;
   /** The app's own icon, beside its name. */
   icon: string;
+  /** The stack, as a line under the repo. */
+  stack: string;
   /** The screenshots a desktop shows, side by side when there are several. */
   onDesktop: ProjectImageType[];
   /** The screenshots a phone shows. */
@@ -61,6 +63,7 @@ const projectDetails: ProjectDetailType[] = [
     repoUrl: 'https://github.com/akuttruff/lm-chat',
     repoLabel: 'github.com/akuttruff/lm-chat',
     icon: lmChatIcon,
+    stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite, MCP',
     onDesktop: lmChatPhones,
     onPhone: [lmChatWide],
     summaryId: 'lm-chat-summary',
@@ -73,7 +76,7 @@ const projectDetails: ProjectDetailType[] = [
         tool calls and its token counts. The model&apos;s memories of me live in a file it reads and edits through
         {' '}
         <a href="https://github.com/akuttruff/lm-memory-mcp" target="_blank" rel="noopener noreferrer">lm-memory-mcp</a>
-        , my memory MCP server. React 19, TypeScript, Vite, Node 24 with node:sqlite.
+        , my memory MCP server.
       </>
     ),
   }, {
@@ -81,24 +84,27 @@ const projectDetails: ProjectDetailType[] = [
     repoUrl: 'https://github.com/akuttruff/whetstone',
     repoLabel: 'github.com/akuttruff/whetstone',
     icon: whetstoneIcon,
+    stack: 'React 19, TypeScript, Vite, CodeMirror, Node 24 with node:sqlite, served by oMLX or LM Studio',
     onDesktop: [whetstoneWide],
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
-    summary: 'Whetstone is an interview practice tool with a local model as my reviewer. The server runs my solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved. React 19, TypeScript, Vite, CodeMirror, Node 24 with node:sqlite, served by oMLX or LM Studio.',
+    summary: 'Whetstone is an interview practice tool with a local model as my reviewer. The server runs my solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
   }, {
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
     repoLabel: 'github.com/akuttruff/cairn',
     icon: cairnIcon,
+    stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite',
     onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
     onPhone: [cairnDayShot, cairnWeekShot],
     summaryId: 'cairn-summary',
-    summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals. React 19, TypeScript, Vite, Node 24 with node:sqlite.',
+    summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
     repoLabel: 'github.com/akuttruff/orrery',
     icon: orreryIcon,
+    stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite, Python',
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
@@ -109,7 +115,7 @@ const projectDetails: ProjectDetailType[] = [
         <a href="https://github.com/akuttruff/astro-mcp" target="_blank" rel="noopener noreferrer">astro-mcp</a>
         , my Python ephemeris server, running over stdio and calls it directly. A chart is drawn as SVG in under a
         second. A local model then writes the reading on the server and streams it into SQLite. Follow-up questions
-        are answered with the same tools through MCP. React 19, TypeScript, Vite, Node 24 with node:sqlite, Python.
+        are answered with the same tools through MCP.
       </>
     ),
   },

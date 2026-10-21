@@ -239,6 +239,9 @@ img {
     line-height: 1.4em;
     letter-spacing: 1.1px;
     margin: 1.5em 0 0;
+    /* The same soft rule as under the page title, closing the intro before the projects. */
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
 }
 
 .project-intro a, .project-summary a {
@@ -324,12 +327,20 @@ img {
     color: #666;
     font-size: 1.05em;
     letter-spacing: 1.1px;
-    padding: 0.2em 0 1.2em;
+    padding: 0.2em 0 0;
 }
 
 .project-repo:hover, .project-repo:focus {
     color: #3d92c9;
     text-decoration: underline;
+}
+
+/* The stack, a quiet line under the repo. */
+.project-stack {
+    color: #666;
+    font-size: 0.95em;
+    letter-spacing: 1.1px;
+    padding: 0.6em 0 1.2em;
 }
 
 /* The same text as the resume's descriptions. */

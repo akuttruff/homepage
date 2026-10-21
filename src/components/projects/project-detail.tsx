@@ -14,6 +14,7 @@ const ProjectDetail = ({ detail }: ProjectDetailProps) => {
     repoUrl,
     repoLabel,
     icon,
+    stack,
     onDesktop,
     onPhone,
     summaryId,
@@ -29,6 +30,7 @@ const ProjectDetail = ({ detail }: ProjectDetailProps) => {
         <a href={repoUrl} target="_blank" rel="noopener noreferrer">{title}</a>
       </div>
       <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="project-repo">{repoLabel}</a>
+      <div className="project-stack">{stack}</div>
       <div className={`project-images ${images.length > 1 ? 'project-images-row' : ''}`}>
         {images.map(({ src, alt }) => (
           <a key={src} href={repoUrl} target="_blank" rel="noopener noreferrer" className="project-screenshot">
