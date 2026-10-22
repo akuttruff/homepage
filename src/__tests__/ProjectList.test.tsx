@@ -84,6 +84,17 @@ describe('ProjectList', () => {
     expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
+  it('plays a recording of the app in use on a loop, muted, in place of a still', () => {
+    matchMedia(false);
+    render(<ProjectList projectDetails={[{ ...projects[0], onPhone: [{ src: 'lm-chat-demo.mp4', alt: 'LM Chat in use' }] }]} />);
+    const video = document.querySelector('video');
+    expect(video).toHaveAttribute('src', 'lm-chat-demo.mp4');
+    expect(video).toHaveAttribute('loop');
+    expect(video).toHaveAttribute('autoplay');
+    expect(video).toHaveAttribute('aria-label', 'LM Chat in use');
+    expect(screen.queryByRole('img')).toBeNull();
+  });
+
   it('renders nothing for an empty list', () => {
     matchMedia(false);
     render(<ProjectList projectDetails={[]} />);

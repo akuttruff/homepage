@@ -11,12 +11,17 @@ import {
   orreryToday,
   orreryReading,
   orreryWeek,
+  lmChatDemo,
+  cairnDemo,
+  whetstoneDemo,
+  orreryDemo,
   lmChatIcon,
   cairnIcon,
   whetstoneIcon,
   orreryIcon,
 } from '../img';
 
+/** A still, or a short recording of the app in use (an .mp4 that plays on a loop, like a GIF). */
 export interface ProjectImageType {
   src: string;
   alt: string;
@@ -44,6 +49,10 @@ const lmChatPhones: ProjectImageType[] = [
   { src: lmChatChats, alt: 'LM Chat: the chat list with folders, stars and search' },
 ];
 const lmChatWide: ProjectImageType = { src: lmChatDesktop, alt: 'LM Chat on a desktop: the chat list in a sidebar beside a thread with tool calls' };
+const lmChatInUse: ProjectImageType = { src: lmChatDemo, alt: 'LM Chat in use: a thread with its tool cards, then the chat list' };
+const cairnInUse: ProjectImageType = { src: cairnDemo, alt: 'Cairn in use: the week, the month, the day and its meals, then the Add sheet' };
+const whetstoneInUse: ProjectImageType = { src: whetstoneDemo, alt: 'Whetstone in use: a problem, its code run against the tests, the review and the guide' };
+const orreryInUse: ProjectImageType = { src: orreryDemo, alt: 'Orrery in use: a transit wheel with a popup, its reading, then a tarot spread' };
 
 const cairnDayShot: ProjectImageType = { src: cairnDay, alt: 'Cairn: a day\'s calories and macros against their goals, then water, alcohol and workouts' };
 const cairnAddShot: ProjectImageType = { src: cairnAdd, alt: 'Cairn: the Add sheet, with saved foods, a database search and a label scan' };
@@ -64,8 +73,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/lm-chat',
     icon: lmChatIcon,
     stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite, MCP',
-    onDesktop: lmChatPhones,
-    onPhone: [lmChatWide],
+    onDesktop: [lmChatInUse, lmChatPhones[1]!, lmChatPhones[2]!],
+    onPhone: [lmChatInUse],
     summaryId: 'lm-chat-summary',
     summary: (
       <>
@@ -85,8 +94,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/whetstone',
     icon: whetstoneIcon,
     stack: 'React 19, TypeScript, Vite, CodeMirror, Node 24 with node:sqlite, served by oMLX or LM Studio',
-    onDesktop: [whetstoneWide],
-    onPhone: [whetstoneWide],
+    onDesktop: [whetstoneInUse],
+    onPhone: [whetstoneInUse],
     summaryId: 'whetstone-summary',
     summary: 'Whetstone is an interview practice tool with a local model as my reviewer. The server runs my solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
   }, {
@@ -95,8 +104,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/cairn',
     icon: cairnIcon,
     stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite',
-    onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
-    onPhone: [cairnDayShot, cairnWeekShot],
+    onDesktop: [cairnInUse, cairnAddShot, cairnWeekShot],
+    onPhone: [cairnInUse],
     summaryId: 'cairn-summary',
     summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals.',
   }, {
@@ -105,8 +114,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/orrery',
     icon: orreryIcon,
     stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite, Python',
-    onDesktop: orreryPhones,
-    onPhone: orreryPhones.slice(0, 2),
+    onDesktop: [orreryInUse, orreryPhones[1]!, orreryPhones[2]!],
+    onPhone: [orreryInUse],
     summaryId: 'orrery-summary',
     summary: (
       <>
