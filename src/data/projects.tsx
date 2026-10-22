@@ -37,11 +37,11 @@ export interface ProjectDetailType {
   summary: React.ReactNode;
 }
 
-const lmChatInUse: ProjectImageType = { src: lmChatDemo, alt: 'LM Chat in use: a thread with its tool cards, then the chat list' };
+const lmChatInUse: ProjectImageType = { src: lmChatDemo, alt: 'LM Chat in use: a question typed into a chat and answered by the local model as it streams' };
 const cairnInUse: ProjectImageType = { src: cairnDemo, alt: 'Cairn in use: the week, the month, the day and its meals, then the Add sheet' };
 const whetstoneInUse: ProjectImageType = { src: whetstoneDemo, alt: 'Whetstone in use: a problem, its code run against the tests, the review and the guide' };
 const orreryInUse: ProjectImageType = { src: orreryDemo, alt: 'Orrery in use: a transit wheel with a popup, its reading, then a tarot spread' };
-const lmChatOnDesktop: ProjectImageType = { src: lmChatDesktopDemo, alt: 'LM Chat in use on a desktop: the chat list beside a thread with its tool cards', wide: true };
+const lmChatOnDesktop: ProjectImageType = { src: lmChatDesktopDemo, alt: 'LM Chat in use on a desktop: a question typed into a chat and answered by the local model as it streams', wide: true };
 const cairnOnDesktop: ProjectImageType = { src: cairnDesktopDemo, alt: 'Cairn in use on a desktop: the week, the month, the day and the Add sheet', wide: true };
 const whetstoneOnDesktop: ProjectImageType = { src: whetstoneDesktopDemo, alt: 'Whetstone in use on a desktop: the problem beside the editor, the tests run, the review under it', wide: true };
 const orreryOnDesktop: ProjectImageType = { src: orreryDesktopDemo, alt: 'Orrery in use on a desktop: the castings beside a wheel with a popup, its reading, then a spread', wide: true };
