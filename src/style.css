@@ -282,14 +282,13 @@ img {
     background: #1b1d1a;
 }
 
-/* A recording is phone-shaped; the box has its shape before the first frame arrives, so nothing jumps. */
-.project-screenshot video {
-    aspect-ratio: 430 / 932;
-    object-fit: cover;
-}
+/* A recording's box has its shape before the first frame arrives, so nothing jumps. */
+.project-screenshot video { object-fit: cover; }
+.project-screenshot video.video-phone { aspect-ratio: 430 / 932; }
+.project-screenshot video.video-wide { aspect-ratio: 1280 / 840; }
 
-/* A single recording sits centred rather than stretching across the column. */
-.project-images-one .project-screenshot video {
+/* A single phone recording sits centred rather than stretching across the column; a desktop one fills it. */
+.project-images-one .project-screenshot video.video-phone {
     max-width: 360px;
     margin: 0 auto;
 }

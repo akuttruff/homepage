@@ -35,10 +35,10 @@ const ProjectDetail = ({ detail }: ProjectDetailProps) => {
       <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="project-repo">{repoLabel}</a>
       <div className="project-stack">{stack}</div>
       <div className={`project-images ${images.length > 1 ? 'project-images-row' : 'project-images-one'}`}>
-        {images.map(({ src, alt }) => (
+        {images.map(({ src, alt, wide }) => (
           <a key={src} href={repoUrl} target="_blank" rel="noopener noreferrer" className="project-screenshot">
             {isVideo(src)
-              ? <video src={src} autoPlay muted loop playsInline preload="auto" aria-label={alt} />
+              ? <video src={src} autoPlay muted loop playsInline preload="auto" aria-label={alt} className={wide ? 'video-wide' : 'video-phone'} />
               : <img src={src} alt={alt} />}
           </a>
         ))}
