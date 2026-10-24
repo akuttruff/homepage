@@ -2,7 +2,7 @@ import WorkDetailHeader from './work-detail-header';
 import type { WorkDetailType as WorkDetailHeaderType } from './work-detail-header';
 
 export interface WorkDetailType extends WorkDetailHeaderType {
-  descriptionItems: string[];
+  descriptionItems: React.ReactNode[];
 }
 
 interface WorkDetailProps {

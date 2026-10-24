@@ -139,8 +139,13 @@ export interface WorkDetailType {
   company: string | null;
   timeRange: string;
   title: string;
-  descriptionItems: string[];
+  descriptionItems: React.ReactNode[];
 }
+
+/** A link to one of Zendesk's pages about a feature, opening in a new tab. */
+const zd = (href: string, text: string): React.ReactNode => (
+  <a href={href} target="_blank" rel="noopener noreferrer">{text}</a>
+);
 
 const workDetails: WorkDetailType[] = [
   {
@@ -151,12 +156,31 @@ const workDetails: WorkDetailType[] = [
     timeRange: '(August 2021 - present)',
     title: 'Senior Software Engineer',
     descriptionItems: [
-      'Designed and implemented Custom Objects V2 GraphQL schema with TypeScript, enabling customers to build custom data structures with lookup relationships, roll-up summary fields, and auto-numbering',
-      'Built core features including Lookup Relationship Fields with React/Apollo Client, autocomplete filtering, and efficient query optimization; implemented granular object-level permissions with RBAC',
-      'Extended platform architecture for COV2-to-COV2 relationships and Help Center integrations; implemented Light Agent/Contributor access control with multi-tenant security patterns',
-      'Created COV1 → COV2 data migration tool with React export UI, account banners for notifications, and re-export functionality; implemented robust data validation and error recovery',
-      'Contributed to the shared field_management_components React library; co-authored RFCs/design docs for permissions system, auto-numbering feature, and dynamic filtering',
-      'Migrated Vinyl frontend GraphQL from Agent Graph to Platform Data Graph; implemented E2E test coverage, addressed security vulnerabilities, and optimized query performance',
+      <>
+        Designed and built the GraphQL schema, in TypeScript, behind Zendesk&apos;s new
+        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5914453843994', 'custom objects')}, which let
+        customers model their own data with lookup relationships,
+        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10743847273626', 'roll-up summary fields')} and
+        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5392409465370', 'autonumbered records')}
+      </>,
+      <>
+        Built {zd('https://support.zendesk.com/hc/en-us/articles/4591924111770', 'lookup relationship fields')} in
+        React and Apollo Client: a type-ahead record picker with filtering that links custom objects to tickets,
+        users, organizations, each other and
+        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10689134053658', 'help center ticket forms')}
+      </>,
+      <>
+        Implemented {zd('https://support.zendesk.com/hc/en-us/articles/6034260247066', 'object-level permissions')}
+        {' '}with role-based access control, including access for light agents and contributors, under multi-tenant
+        security patterns
+      </>,
+      <>
+        Built the export tool, account banners and re-export flow for
+        {' '}{zd('https://developer.zendesk.com/documentation/custom-data/custom-objects/migrating/introduction/', 'moving legacy custom objects')}
+        {' '}to the new platform, with data validation and error recovery
+      </>,
+      'Co-wrote the RFCs and design docs for the permissions system, autonumbering and dynamic filtering, and contributed to the shared field-management React component library',
+      'Moved a frontend\'s GraphQL from the agent graph to the platform data graph, with end-to-end test coverage, security fixes and faster queries',
     ],
   },
   {
