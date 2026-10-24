@@ -98,7 +98,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
     onPhone: [cairnDayShot, cairnWeekShot],
     summaryId: 'cairn-summary',
-    summary: 'Cairn logs what you eat, drink and do, with the numbers worked out for you. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from those numbers against your goals.',
+    summary: 'Cairn is a food, water and workout log that totals calories and macros against daily goals. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from those numbers against your goals.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
