@@ -58,14 +58,14 @@ const projectDetails: ProjectDetailType[] = [
     summaryId: 'lm-chat-summary',
     summary: (
       <>
-        LM Chat talks to a model on my own computer from my phone. One Node process serves the React app and
+        LM Chat talks to a model running on a home computer from a phone. One Node process serves the React app and
         proxies each turn to the model server, which then streams the reply into SQLite as it arrives, so a
         locked phone doesn&apos;t interrupt the conversation. The API token never reaches the browser. Every
         message keeps its reasoning, its MCP
-        tool calls and its token counts. The model&apos;s memories of me live in a file it reads and edits through
+        tool calls and its token counts. The model&apos;s memories of the user live in a file it reads and edits through
         {' '}
         <a href="https://github.com/akuttruff/lm-memory-mcp" target="_blank" rel="noopener noreferrer">lm-memory-mcp</a>
-        , my memory MCP server.
+        , a memory MCP server.
       </>
     ),
   }, {
@@ -77,7 +77,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [whetstoneOnDesktop],
     onPhone: [whetstoneInUse],
     summaryId: 'whetstone-summary',
-    summary: 'Whetstone is an interview practice tool with a local model as my reviewer. The server runs my solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
+    summary: 'Whetstone is an interview practice tool with a local model as the reviewer. The server runs each solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
   }, {
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
@@ -87,7 +87,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [cairnOnDesktop],
     onPhone: [cairnInUse],
     summaryId: 'cairn-summary',
-    summary: 'Cairn logs what I eat, drink and do, with the numbers worked out for me. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from my numbers against my goals.',
+    summary: 'Cairn logs what you eat, drink and do, with the numbers worked out for you. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes from those numbers against your goals.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
