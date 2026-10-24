@@ -104,7 +104,9 @@ const projectDetails: ProjectDetailType[] = [
         <a href="https://github.com/akuttruff/astro-mcp" target="_blank" rel="noopener noreferrer">astro-mcp</a>
         , my Python ephemeris server, running over stdio and calls it directly. A chart is drawn as SVG in under a
         second. A local model then writes the reading on the server and streams it into SQLite. Follow-up questions
-        are answered with the same tools through MCP.
+        are answered with the same tools through MCP. It reads tarot too: a daily card, a spread, or a card pulled
+        against a reading. The cards are dealt from the public-domain 1909 Rider-Waite-Smith deck, with Pamela
+        Colman Smith&apos;s original illustrations, and the same model reads them.
       </>
     ),
   },
