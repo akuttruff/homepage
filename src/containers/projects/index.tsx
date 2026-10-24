@@ -13,9 +13,10 @@ const Projects = () => (
           {' '}
           <a href="https://tailscale.com" target="_blank" rel="noopener noreferrer">Tailscale</a>
           {' '}
-          from my local home server using open weights models. I&apos;m currently using
+          from my local home server, a Mac Studio with an M4 Max (16-core CPU, 40-core GPU) and 128 GB of unified
+          memory, using open weights models. I&apos;m currently using
           {' '}
-          <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener noreferrer">Qwen 3.8-27b</a>
+          <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B" target="_blank" rel="noopener noreferrer">Qwen 3.5-122b-a10b</a>
           {' '}
           as my main model and
           {' '}
