@@ -157,30 +157,29 @@ const workDetails: WorkDetailType[] = [
     title: 'Senior Software Engineer',
     descriptionItems: [
       <>
-        Designed and built the GraphQL schema, in TypeScript, behind Zendesk&apos;s new
+        Worked on the GraphQL schema, in TypeScript, for Zendesk&apos;s new
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5914453843994', 'custom objects')}, which let
         customers model their own data with lookup relationships,
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10743847273626', 'roll-up summary fields')} and
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5392409465370', 'autonumbered records')}
       </>,
       <>
-        Built {zd('https://support.zendesk.com/hc/en-us/articles/4591924111770', 'lookup relationship fields')} in
-        React and Apollo Client: a type-ahead record picker with filtering that links custom objects to tickets,
-        users, organizations, each other and
+        Contributed to {zd('https://support.zendesk.com/hc/en-us/articles/4591924111770', 'lookup relationship fields')}
+        {' '}in React and Apollo Client, including the type-ahead record picker and its filtering, and their reach to
+        other custom objects and
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10689134053658', 'help center ticket forms')}
       </>,
       <>
-        Implemented {zd('https://support.zendesk.com/hc/en-us/articles/6034260247066', 'object-level permissions')}
-        {' '}with role-based access control, including access for light agents and contributors, under multi-tenant
-        security patterns
+        Helped implement {zd('https://support.zendesk.com/hc/en-us/articles/6034260247066', 'object-level permissions')}
+        {' '}with role-based access control, including access for light agents and contributors
       </>,
       <>
-        Built the export tool, account banners and re-export flow for
+        Worked on the export tool, account banners and re-export flow for
         {' '}{zd('https://developer.zendesk.com/documentation/custom-data/custom-objects/migrating/introduction/', 'moving legacy custom objects')}
-        {' '}to the new platform, with data validation and error recovery
+        {' '}to the new platform
       </>,
-      'Co-wrote the RFCs and design docs for the permissions system, autonumbering and dynamic filtering, and contributed to the shared field-management React component library',
-      'Moved a frontend\'s GraphQL from the agent graph to the platform data graph, with end-to-end test coverage, security fixes and faster queries',
+      'Co-wrote RFCs and design docs for the permissions system, autonumbering and dynamic filtering, and contributed to the shared field-management React component library',
+      'Helped move a frontend\'s GraphQL from the agent graph to the platform data graph, adding end-to-end tests, fixing security issues and speeding up queries',
     ],
   },
   {
