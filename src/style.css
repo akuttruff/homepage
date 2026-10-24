@@ -272,25 +272,13 @@ img {
     min-width: 0;
 }
 
-.project-screenshot img, .project-screenshot video {
+.project-screenshot img {
     display: block;
     width: 100%;
     padding: 0;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-    background: #1b1d1a;
-}
-
-/* A recording's box has its shape before the first frame arrives, so nothing jumps. */
-.project-screenshot video { object-fit: cover; }
-.project-screenshot video.video-phone { aspect-ratio: 430 / 932; }
-.project-screenshot video.video-wide { aspect-ratio: 1280 / 840; }
-
-/* A single phone recording sits centred rather than stretching across the column; a desktop one fills it. */
-.project-images-one .project-screenshot video.video-phone {
-    max-width: 360px;
-    margin: 0 auto;
 }
 
 /* Several phone screenshots side by side (desktop only; a phone gets one desktop screenshot). */

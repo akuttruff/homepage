@@ -16,14 +16,6 @@ import whetstoneDesktop from './projects/whetstone-desktop.png';
 import orreryToday from './projects/orrery-today.png';
 import orreryReading from './projects/orrery-reading.png';
 import orreryWeek from './projects/orrery-week.png';
-import lmChatDemo from './projects/lm-chat-demo.mp4';
-import cairnDemo from './projects/cairn-demo.mp4';
-import whetstoneDemo from './projects/whetstone-demo.mp4';
-import orreryDemo from './projects/orrery-demo.mp4';
-import lmChatDesktopDemo from './projects/lm-chat-desktop-demo.mp4';
-import cairnDesktopDemo from './projects/cairn-desktop-demo.mp4';
-import whetstoneDesktopDemo from './projects/whetstone-desktop-demo.mp4';
-import orreryDesktopDemo from './projects/orrery-desktop-demo.mp4';
 import lmChatIcon from './projects/lm-chat-icon.png';
 import cairnIcon from './projects/cairn-icon.png';
 import whetstoneIcon from './projects/whetstone-icon.png';
@@ -48,14 +40,6 @@ export {
   orreryToday,
   orreryReading,
   orreryWeek,
-  lmChatDemo,
-  cairnDemo,
-  whetstoneDemo,
-  orreryDemo,
-  lmChatDesktopDemo,
-  cairnDesktopDemo,
-  whetstoneDesktopDemo,
-  orreryDesktopDemo,
   lmChatIcon,
   cairnIcon,
   whetstoneIcon,
