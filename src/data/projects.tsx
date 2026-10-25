@@ -152,7 +152,7 @@ const projectDetails: ProjectDetailType[] = [
     repoUrl: 'https://github.com/akuttruff/orrery',
     repoLabel: 'github.com/akuttruff/orrery',
     icon: orreryIcon,
-    stack: 'TypeScript, Vite, node:sqlite, Python',
+    stack: 'Python, TypeScript, Vite, node:sqlite',
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
