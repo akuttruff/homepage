@@ -100,6 +100,16 @@ const projectDetails: ProjectDetailType[] = [
       </>
     ),
   }, {
+    title: 'WEFT',
+    repoUrl: 'https://github.com/akuttruff/weft',
+    repoLabel: 'github.com/akuttruff/weft',
+    icon: weftIcon,
+    stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
+    onDesktop: [weftTaskShot, weftTestShot],
+    onPhone: [weftTaskShot],
+    summaryId: 'weft-summary',
+    summary: 'Weft is a coding agent for the terminal that runs local models in tandem. Qwen3.8‑27B plans each task and reviews the diff. Qwen3.5‑122B‑A10B, a mixture-of-experts model, does the work with file, search and shell tools. Qwen3.5‑9B answers their questions about where things live. All three are served by LM Studio on my Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be resumed. When a conversation nears the context window, the earlier tasks are compacted into a summary.',
+  }, {
     title: 'WHETSTONE',
     repoUrl: 'https://github.com/akuttruff/whetstone',
     repoLabel: 'github.com/akuttruff/whetstone',
@@ -109,16 +119,6 @@ const projectDetails: ProjectDetailType[] = [
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
     summary: 'Whetstone is an interview practice tool with a local model as the reviewer. The server runs each solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
-  }, {
-    title: 'WEFT',
-    repoUrl: 'https://github.com/akuttruff/weft',
-    repoLabel: 'github.com/akuttruff/weft',
-    icon: weftIcon,
-    stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
-    onDesktop: [weftTaskShot, weftTestShot],
-    onPhone: [weftTaskShot],
-    summaryId: 'weft-summary',
-    summary: 'Weft is a coding agent for the terminal that runs local models in tandem. Qwen3.8‑27B plans each task and reviews the diff. Qwen3.5‑122B‑A10B, a mixture-of-experts model, does the work with file, search and shell tools. Qwen3.5‑9B answers their questions about where things live. All three are served by LM Studio on my Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be resumed. When a conversation nears the context window, the earlier tasks are compacted into a summary and the work goes on from there.',
   }, {
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
