@@ -108,7 +108,25 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [weftTaskShot, weftTestShot],
     onPhone: [weftTaskShot],
     summaryId: 'weft-summary',
-    summary: 'Weft is a coding agent for the terminal that runs local models in tandem. Qwen3.8‑27B plans each task and reviews the diff. Qwen3.5‑122B‑A10B, a mixture-of-experts model, does the work with file, search and shell tools. Qwen3.5‑9B answers their questions about where things live. All three are served by LM Studio on my Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be resumed. When a conversation nears the context window, the earlier tasks are compacted into a summary.',
+    summary: (
+      <>
+        Weft is a coding agent for the terminal that runs local models in tandem.
+        {' '}
+        <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener noreferrer">Qwen3.8‑27B</a>
+        {' '}
+        plans each task and reviews the diff.
+        {' '}
+        <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B" target="_blank" rel="noopener noreferrer">Qwen3.5‑122B‑A10B</a>
+        , a mixture-of-experts model, does the work with file, search and shell tools.
+        {' '}
+        <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen3.5‑9B</a>
+        {' '}
+        answers their questions about where things live. All three are served by LM Studio on my
+        Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be
+        resumed. When a conversation nears the context window, the earlier tasks are compacted into
+        a summary.
+      </>
+    ),
   }, {
     title: 'WHETSTONE',
     repoUrl: 'https://github.com/akuttruff/whetstone',
