@@ -157,16 +157,14 @@ const workDetails: WorkDetailType[] = [
     title: 'Senior Software Engineer',
     descriptionItems: [
       <>
-        Worked on the GraphQL schema, in TypeScript, for Zendesk&apos;s new
+        Works in TypeScript, Java and Ruby on Zendesk&apos;s new
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5914453843994', 'custom objects')}, which let
-        customers model their own data with lookup relationships,
-        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10743847273626', 'roll-up summary fields')} and
-        {' '}{zd('https://support.zendesk.com/hc/en-us/articles/5392409465370', 'autonumbered records')}
+        customers model their own data
       </>,
+      'Developed the GraphQL schema that serves custom objects via the platform data graph, adding end-to-end tests, fixing security issues and speeding up queries',
       <>
         Contributed to {zd('https://support.zendesk.com/hc/en-us/articles/4591924111770', 'lookup relationship fields')}
-        {' '}in React and Apollo Client, including the type-ahead record picker and its filtering, and their reach to
-        other custom objects and
+        , including the type-ahead record picker and its filtering, and extended them to other custom objects and
         {' '}{zd('https://support.zendesk.com/hc/en-us/articles/10689134053658', 'help center ticket forms')}
       </>,
       <>
@@ -178,8 +176,7 @@ const workDetails: WorkDetailType[] = [
         {' '}{zd('https://developer.zendesk.com/documentation/custom-data/custom-objects/migrating/introduction/', 'moving legacy custom objects')}
         {' '}to the new platform
       </>,
-      'Co-wrote RFCs and design docs for the permissions system, autonumbering and dynamic filtering, and contributed to the shared field-management React component library',
-      'Helped move a frontend\'s GraphQL from the agent graph to the platform data graph, adding end-to-end tests, fixing security issues and speeding up queries',
+      'Co-authored RFCs and design docs for the permissions system, autonumbering and dynamic filtering, and contributed to the shared field-management React component library',
     ],
   },
   {
