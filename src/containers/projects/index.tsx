@@ -14,15 +14,18 @@ const Projects = () => (
           <a href="https://tailscale.com" target="_blank" rel="noopener noreferrer">Tailscale</a>
           {' '}
           from my local home server, a Mac Studio with an M4 Max (16-core CPU, 40-core GPU) and 128 GB of unified
-          memory, using open weights models. I&apos;m currently using
+          memory, using open weights models. I&apos;m currently running three of them.
           {' '}
-          <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B" target="_blank" rel="noopener noreferrer">Qwen 3.5-122b-a10b</a>
+          <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B" target="_blank" rel="noopener noreferrer">Qwen3.5‑122B‑A10B</a>
+          , a mixture-of-experts model that answers quickly for its size, is the main model behind
+          the apps and does the work in Weft.
           {' '}
-          as my main model and
+          <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener noreferrer">Qwen3.8‑27B</a>
+          , a dense model that reasons more carefully, plans and reviews in Weft.
           {' '}
-          <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen 3.5-9b</a>
+          <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen3.5‑9B</a>
           {' '}
-          for fast, simple lookups.
+          handles fast, simple lookups and summaries.
         </p>
         <ProjectList projectDetails={projectDetails} />
       </div>
