@@ -20,6 +20,11 @@ import lmChatIcon from './projects/lm-chat-icon.png';
 import cairnIcon from './projects/cairn-icon.png';
 import whetstoneIcon from './projects/whetstone-icon.png';
 import orreryIcon from './projects/orrery-icon.png';
+import barometerDesktop from './projects/barometer-desktop.png';
+import barometerMonitors from './projects/barometer-monitors.png';
+import barometerGraphs from './projects/barometer-graphs.png';
+import barometerTiles from './projects/barometer-tiles.png';
+import barometerIcon from './projects/barometer-icon.png';
 
 export {
   jamaLogo,
@@ -44,4 +49,9 @@ export {
   cairnIcon,
   whetstoneIcon,
   orreryIcon,
+  barometerDesktop,
+  barometerMonitors,
+  barometerGraphs,
+  barometerTiles,
+  barometerIcon,
 };

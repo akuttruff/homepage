@@ -15,6 +15,11 @@ import {
   cairnIcon,
   whetstoneIcon,
   orreryIcon,
+  barometerDesktop,
+  barometerMonitors,
+  barometerGraphs,
+  barometerTiles,
+  barometerIcon,
 } from '../img';
 
 export interface ProjectImageType {
@@ -36,6 +41,8 @@ export interface ProjectDetailType {
   onPhone: ProjectImageType[];
   summaryId: string;
   summary: React.ReactNode;
+  /** Left off the page for now, without losing its write-up. */
+  hidden?: boolean;
 }
 
 const lmChatPhones: ProjectImageType[] = [
@@ -56,6 +63,13 @@ const orreryPhones: ProjectImageType[] = [
   { src: orreryReading, alt: 'Orrery: a reading written by the model, with a question and its answer underneath' },
   { src: orreryWeek, alt: 'Orrery: a week\'s transits in two groups, the contacts exact this week and the slow planets in orb all week' },
 ];
+
+const barometerPhones: ProjectImageType[] = [
+  { src: barometerMonitors, alt: 'Barometer: how many monitors stand at alert, warn, no data and OK, then the triggered ones' },
+  { src: barometerTiles, alt: 'Barometer: every monitor as a tile coloured by its status, grouped by apps, services, model and Mac' },
+  { src: barometerGraphs, alt: 'Barometer: health-check latency, errors logged and memory over the last six hours' },
+];
+const barometerWide: ProjectImageType = { src: barometerDesktop, alt: 'Barometer on a desktop: the monitor summary, the triggered monitors and every monitor as a tile' };
 
 const projectDetails: ProjectDetailType[] = [
   {
@@ -108,6 +122,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
+    hidden: true,
     summary: (
       <>
         Orrery casts transits, forecasts and a birth chart, one tap each. The server keeps
@@ -120,6 +135,16 @@ const projectDetails: ProjectDetailType[] = [
         Colman Smith&apos;s original illustrations, and the same model reads them.
       </>
     ),
+  }, {
+    title: 'BAROMETER',
+    repoUrl: 'https://github.com/akuttruff/barometer',
+    repoLabel: 'github.com/akuttruff/barometer',
+    icon: barometerIcon,
+    stack: 'React 19, TypeScript, Vite, Node 24 with node:sqlite, Web Push',
+    onDesktop: barometerPhones,
+    onPhone: [barometerWide],
+    summaryId: 'barometer-summary',
+    summary: 'Barometer is a monitoring board for these apps, the model server they share and the Mac they run on. Once a minute, the server checks each app\'s health route and launchd log, and looks at memory pressure, disk space, Tailscale and last night\'s database backups. Every ten minutes it also sends the model a short test prompt to see how quickly it answers. The samples are kept in SQLite and drawn as SVG graphs covering the last hour, day or week.',
   },
 ];
 
