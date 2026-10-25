@@ -20,6 +20,9 @@ import {
   barometerGraphs,
   barometerTiles,
   barometerIcon,
+  weftTask,
+  weftTest,
+  weftIcon,
 } from '../img';
 
 export interface ProjectImageType {
@@ -71,8 +74,21 @@ const barometerPhones: ProjectImageType[] = [
 ];
 const barometerWide: ProjectImageType = { src: barometerDesktop, alt: 'Barometer on a desktop: the monitor summary, the triggered monitors and every monitor as a tile' };
 
+const weftTaskShot: ProjectImageType = { src: weftTask, alt: 'Weft: a task typed at the prompt, the planner\'s plan, the worker\'s edit as a diff, the tests run and the reviewer\'s verdict' };
+const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up task, the new test file written and shown as a diff, the type-check and tests passing, then the review' };
+
 const projectDetails: ProjectDetailType[] = [
   {
+    title: 'WEFT',
+    repoUrl: 'https://github.com/akuttruff/weft',
+    repoLabel: 'github.com/akuttruff/weft',
+    icon: weftIcon,
+    stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
+    onDesktop: [weftTaskShot, weftTestShot],
+    onPhone: [weftTaskShot],
+    summaryId: 'weft-summary',
+    summary: 'Weft is a coding agent for the terminal that runs local models in tandem: a dense model plans each task and reviews the diff, a faster mixture-of-experts model does the work with file, search and shell tools, and a small model answers the other two\'s questions about where things live. All three are served by LM Studio on this Mac. Tools from MCP servers plug in, every session is written to disk and can be resumed, and a long conversation is folded into a handover note before it outgrows the context window.',
+  }, {
     title: 'LM CHAT',
     repoUrl: 'https://github.com/akuttruff/lm-chat',
     repoLabel: 'github.com/akuttruff/lm-chat',

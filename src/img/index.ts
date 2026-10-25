@@ -25,6 +25,9 @@ import barometerMonitors from './projects/barometer-monitors.png';
 import barometerGraphs from './projects/barometer-graphs.png';
 import barometerTiles from './projects/barometer-tiles.png';
 import barometerIcon from './projects/barometer-icon.png';
+import weftTask from './projects/weft-task.png';
+import weftTest from './projects/weft-test.png';
+import weftIcon from './projects/weft-icon.png';
 
 export {
   jamaLogo,
@@ -54,4 +57,7 @@ export {
   barometerGraphs,
   barometerTiles,
   barometerIcon,
+  weftTask,
+  weftTest,
+  weftIcon,
 };
