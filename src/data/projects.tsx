@@ -79,16 +79,6 @@ const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up 
 
 const projectDetails: ProjectDetailType[] = [
   {
-    title: 'WEFT',
-    repoUrl: 'https://github.com/akuttruff/weft',
-    repoLabel: 'github.com/akuttruff/weft',
-    icon: weftIcon,
-    stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
-    onDesktop: [weftTaskShot, weftTestShot],
-    onPhone: [weftTaskShot],
-    summaryId: 'weft-summary',
-    summary: 'Weft is a coding agent for the terminal that runs local models in tandem: a dense model plans each task and reviews the diff, a faster mixture-of-experts model does the work with file, search and shell tools, and a small model answers the other two\'s questions about where things live. All three are served by LM Studio on this Mac. Tools from MCP servers plug in, every session is written to disk and can be resumed, and a long conversation is folded into a handover note before it outgrows the context window.',
-  }, {
     title: 'LM CHAT',
     repoUrl: 'https://github.com/akuttruff/lm-chat',
     repoLabel: 'github.com/akuttruff/lm-chat',
@@ -119,6 +109,16 @@ const projectDetails: ProjectDetailType[] = [
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
     summary: 'Whetstone is an interview practice tool with a local model as the reviewer. The server runs each solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
+  }, {
+    title: 'WEFT',
+    repoUrl: 'https://github.com/akuttruff/weft',
+    repoLabel: 'github.com/akuttruff/weft',
+    icon: weftIcon,
+    stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
+    onDesktop: [weftTaskShot, weftTestShot],
+    onPhone: [weftTaskShot],
+    summaryId: 'weft-summary',
+    summary: 'Weft is a coding agent for the terminal that runs local models in tandem. A dense model plans each task and reviews the diff. A faster mixture-of-experts model does the work with file, search and shell tools. A small one answers their questions about where things live. All three are served by LM Studio on this Mac. Tools from MCP servers plug in, and every session is written to disk and can be resumed. Before a conversation outgrows the context window, it is folded into a handover note.',
   }, {
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
