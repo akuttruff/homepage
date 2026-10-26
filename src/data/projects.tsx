@@ -162,6 +162,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
+    hidden: true,
     summary: (
       <>
         Orrery casts transits, forecasts and a birth chart, one tap each. The server keeps
