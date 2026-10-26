@@ -275,6 +275,8 @@ img {
 .project-screenshot img {
     display: block;
     width: 100%;
+    /* The width and height attributes reserve the space before the file lands; the drawn size follows the width. */
+    height: auto;
     padding: 0;
     border: 1px solid #ddd;
     border-radius: 4px;

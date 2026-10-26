@@ -28,7 +28,15 @@ import {
 export interface ProjectImageType {
   src: string;
   alt: string;
+  /** The file's pixel size, so the page reserves the space before the image lands. */
+  width: number;
+  height: number;
 }
+
+/** A phone screenshot, 860 by 1864. */
+const phone = (src: string, alt: string): ProjectImageType => ({ src, alt, width: 860, height: 1864 });
+/** A desktop screenshot, 1600 wide by the given height. */
+const desktop = (src: string, alt: string, height = 1050): ProjectImageType => ({ src, alt, width: 1600, height });
 
 export interface ProjectDetailType {
   title: string;
@@ -49,33 +57,33 @@ export interface ProjectDetailType {
 }
 
 const lmChatPhones: ProjectImageType[] = [
-  { src: lmChatThread, alt: 'LM Chat: a question, the model\'s thinking as a row, the MCP tools it called as cards, then the reply' },
-  { src: lmChatReply, alt: 'LM Chat: a reply in Markdown, then what the turn cost in time and tokens' },
-  { src: lmChatChats, alt: 'LM Chat: the chat list with folders, stars and search' },
+  phone(lmChatThread, 'LM Chat: a question, the model\'s thinking as a row, the MCP tools it called as cards, then the reply'),
+  phone(lmChatReply, 'LM Chat: a reply in Markdown, then what the turn cost in time and tokens'),
+  phone(lmChatChats, 'LM Chat: the chat list with folders, stars and search'),
 ];
-const lmChatWide: ProjectImageType = { src: lmChatDesktop, alt: 'LM Chat on a desktop: the chat list in a sidebar beside a thread with tool calls' };
+const lmChatWide: ProjectImageType = desktop(lmChatDesktop, 'LM Chat on a desktop: the chat list in a sidebar beside a thread with tool calls');
 
-const cairnDayShot: ProjectImageType = { src: cairnDay, alt: 'Cairn: a day\'s calories and macros against their goals, then water, alcohol and workouts' };
-const cairnAddShot: ProjectImageType = { src: cairnAdd, alt: 'Cairn: the Add sheet, with saved foods, a database search and a label scan' };
-const cairnWeekShot: ProjectImageType = { src: cairnWeek, alt: 'Cairn: a week of days, each against its own goal' };
+const cairnDayShot: ProjectImageType = phone(cairnDay, 'Cairn: a day\'s calories and macros against their goals, then water, alcohol and workouts');
+const cairnAddShot: ProjectImageType = phone(cairnAdd, 'Cairn: the Add sheet, with saved foods, a database search and a label scan');
+const cairnWeekShot: ProjectImageType = phone(cairnWeek, 'Cairn: a week of days, each against its own goal');
 
-const whetstoneWide: ProjectImageType = { src: whetstoneDesktop, alt: 'Whetstone on a desktop: the problem beside the editor, with the scored review under the draft' };
+const whetstoneWide: ProjectImageType = desktop(whetstoneDesktop, 'Whetstone on a desktop: the problem beside the editor, with the scored review under the draft');
 
 const orreryPhones: ProjectImageType[] = [
-  { src: orreryToday, alt: 'Orrery: the day\'s transits over the birth chart as a wheel, then every contact in a table' },
-  { src: orreryReading, alt: 'Orrery: a reading written by the model, with a question and its answer underneath' },
-  { src: orreryWeek, alt: 'Orrery: a week\'s transits in two groups, the contacts exact this week and the slow planets in orb all week' },
+  phone(orreryToday, 'Orrery: the day\'s transits over the birth chart as a wheel, then every contact in a table'),
+  phone(orreryReading, 'Orrery: a reading written by the model, with a question and its answer underneath'),
+  phone(orreryWeek, 'Orrery: a week\'s transits in two groups, the contacts exact this week and the slow planets in orb all week'),
 ];
 
 const barometerPhones: ProjectImageType[] = [
-  { src: barometerMonitors, alt: 'Barometer: how many monitors stand at alert, warn, no data and OK, then the triggered ones' },
-  { src: barometerTiles, alt: 'Barometer: every monitor as a tile coloured by its status, grouped by apps, services, model and Mac' },
-  { src: barometerGraphs, alt: 'Barometer: health-check latency, errors logged and memory over the last six hours' },
+  phone(barometerMonitors, 'Barometer: how many monitors stand at alert, warn, no data and OK, then the triggered ones'),
+  phone(barometerTiles, 'Barometer: every monitor as a tile coloured by its status, grouped by apps, services, model and Mac'),
+  phone(barometerGraphs, 'Barometer: health-check latency, errors logged and memory over the last six hours'),
 ];
-const barometerWide: ProjectImageType = { src: barometerDesktop, alt: 'Barometer on a desktop: the monitor summary, the triggered monitors and every monitor as a tile' };
+const barometerWide: ProjectImageType = desktop(barometerDesktop, 'Barometer on a desktop: the monitor summary, the triggered monitors and every monitor as a tile', 1230);
 
-const weftTaskShot: ProjectImageType = { src: weftTask, alt: 'Weft: a task typed at the prompt, the planner\'s plan, the worker\'s edit as a diff, the tests run and the reviewer\'s verdict' };
-const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up task, the new test file written and shown as a diff, the type-check and tests passing, then the review' };
+const weftTaskShot: ProjectImageType = { src: weftTask, alt: 'Weft: a task typed at the prompt, the planner\'s plan, the worker\'s edit as a diff, the tests run and the reviewer\'s verdict', width: 860, height: 1374 };
+const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up task, the new test file written and shown as a diff, the type-check and tests passing, then the review', width: 860, height: 1374 };
 
 const projectDetails: ProjectDetailType[] = [
   {

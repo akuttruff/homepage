@@ -1,4 +1,4 @@
-import graphQLPoster from '../img/GraphQLPoster.jpg';
+import graphQLPoster from '../img/GraphQLPoster.webp';
 
 const GraphQLVideo = (): React.ReactNode => {
   const id = 'graph-ql';

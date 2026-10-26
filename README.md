@@ -8,7 +8,7 @@ This project ports my old website over to React + Vite. My code lives in an [AWS
 - **Framework:** React 18 with TypeScript
 - **Routing:** React Router DOM v6
 - **Build Tool:** Vite 5 (fast dev server & optimized builds)
-- **Styling:** CSS with Google Fonts (Lato)
+- **Styling:** CSS with Lato, self-hosted and preloaded from `public/fonts`
 
 ## Development
 

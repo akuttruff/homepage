@@ -12,9 +12,9 @@ const matchMedia = (matches: boolean) => {
 };
 
 describe('ProjectList', () => {
-  const day = { src: 'cairn-day.png', alt: 'Cairn, a day' };
-  const add = { src: 'cairn-add.png', alt: 'Cairn, adding food' };
-  const week = { src: 'cairn-week.png', alt: 'Cairn, a week' };
+  const day = { src: 'cairn-day.png', alt: 'Cairn, a day', width: 860, height: 1864 };
+  const add = { src: 'cairn-add.png', alt: 'Cairn, adding food', width: 860, height: 1864 };
+  const week = { src: 'cairn-week.png', alt: 'Cairn, a week', width: 860, height: 1864 };
   const projects: ProjectDetailType[] = [
     {
       title: 'LM CHAT',
@@ -23,10 +23,10 @@ describe('ProjectList', () => {
       icon: 'lm-chat-icon.png',
       stack: 'React, Node',
       onDesktop: [
-        { src: 'lm-chat-thread.png', alt: 'LM Chat, a thread' },
-        { src: 'lm-chat-chats.png', alt: 'LM Chat, the chats' },
+        { src: 'lm-chat-thread.png', alt: 'LM Chat, a thread', width: 860, height: 1864 },
+        { src: 'lm-chat-chats.png', alt: 'LM Chat, the chats', width: 860, height: 1864 },
       ],
-      onPhone: [{ src: 'lm-chat-desktop.png', alt: 'LM Chat on a desktop' }],
+      onPhone: [{ src: 'lm-chat-desktop.png', alt: 'LM Chat on a desktop', width: 860, height: 1864 }],
       summaryId: 'lm-chat-summary',
       summary: 'A chat client.',
     }, {

@@ -1,4 +1,4 @@
-import clojureWestPoster from '../img/ClojureWestPoster.jpg';
+import clojureWestPoster from '../img/ClojureWestPoster.webp';
 
 const ClojureVideo = (): React.ReactNode => {
   const id = 'clojure-west';

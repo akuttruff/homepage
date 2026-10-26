@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="utf-8">
     <title>Amie Kuttruff &ndash; Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300">
+    <!-- Lato is self-hosted and preloaded, so the text paints with the first frame instead of after a round trip to Google Fonts. -->
+    <link rel="preload" href="/fonts/lato-300-v25.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/lato-400-v25.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(/fonts/lato-300-v25.woff2) format('woff2');
+      }
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/lato-400-v25.woff2) format('woff2');
+      }
+    </style>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
