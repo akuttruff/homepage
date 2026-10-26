@@ -142,7 +142,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [whetstoneWide],
     onPhone: [whetstoneWide],
     summaryId: 'whetstone-summary',
-    summary: 'Whetstone is an interview practice tool with a local model as the reviewer. The server runs each solution against real tests in a sandbox, in TypeScript, Ruby or Java. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
+    summary: 'Whetstone is an interview practice tool with a local model as the reviewer. The server runs each solution against real tests in a sandbox, in TypeScript, Ruby, Java or Rust. It then sends the draft and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a tutor thread. New problems are generated against a JSON schema and verified against their own tests before they are saved.',
   }, {
     title: 'CAIRN',
     repoUrl: 'https://github.com/akuttruff/cairn',
