@@ -1,0 +1,4 @@
+[
+  {"source": "https://amiekuttruff.com", "target": "https://www.amiekuttruff.com", "status": "302"},
+  {"source": "</^[^.]+$|\\.(?!(css|gif|ico|jpg|jpeg|webp|avif|js|png|txt|svg|woff|woff2|ttf|map|json)$)([^.]+$)/>", "target": "/index.html", "status": "200"}
+]
