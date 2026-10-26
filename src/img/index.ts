@@ -20,7 +20,6 @@ import lmChatIcon from './projects/lm-chat-icon.webp';
 import cairnIcon from './projects/cairn-icon.webp';
 import whetstoneIcon from './projects/whetstone-icon.webp';
 import orreryIcon from './projects/orrery-icon.webp';
-import barometerDesktop from './projects/barometer-desktop.webp';
 import barometerMonitors from './projects/barometer-monitors.webp';
 import barometerGraphs from './projects/barometer-graphs.webp';
 import barometerTiles from './projects/barometer-tiles.webp';
@@ -52,7 +51,6 @@ export {
   cairnIcon,
   whetstoneIcon,
   orreryIcon,
-  barometerDesktop,
   barometerMonitors,
   barometerGraphs,
   barometerTiles,

@@ -15,7 +15,6 @@ import {
   cairnIcon,
   whetstoneIcon,
   orreryIcon,
-  barometerDesktop,
   barometerMonitors,
   barometerGraphs,
   barometerTiles,
@@ -80,7 +79,6 @@ const barometerPhones: ProjectImageType[] = [
   phone(barometerTiles, 'Barometer: every monitor as a tile coloured by its status, grouped by apps, services, model and Mac'),
   phone(barometerGraphs, 'Barometer: health-check latency, errors logged and memory over the last six hours'),
 ];
-const barometerWide: ProjectImageType = desktop(barometerDesktop, 'Barometer on a desktop: the monitor summary, the triggered monitors and every monitor as a tile', 1230);
 
 const weftTaskShot: ProjectImageType = { src: weftTask, alt: 'Weft: a task typed at the prompt, the planner\'s plan, the worker\'s edit as a diff, the tests run and the reviewer\'s verdict', width: 860, height: 1374 };
 const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up task, the new test file written and shown as a diff, the type-check and tests passing, then the review', width: 860, height: 1374 };
@@ -183,7 +181,7 @@ const projectDetails: ProjectDetailType[] = [
     icon: barometerIcon,
     stack: 'TypeScript, Vite, node:sqlite, Web Push',
     onDesktop: barometerPhones,
-    onPhone: [barometerWide],
+    onPhone: barometerPhones.slice(0, 1),
     summaryId: 'barometer-summary',
     summary: 'Barometer is a monitoring board for these apps, the model server they share and the Mac they run on. Once a minute, the server checks each app\'s health route and launchd log, and looks at memory pressure, disk space, Tailscale and last night\'s database backups. Every ten minutes it also sends the model a short test prompt to see how quickly it answers. The samples are kept in SQLite and drawn as SVG graphs covering the last hour, day or week.',
   },
