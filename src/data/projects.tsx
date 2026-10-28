@@ -152,7 +152,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: [cairnDayShot, cairnTrainShot, cairnCoachShot],
     onPhone: [cairnTrainShot, cairnCoachShot],
     summaryId: 'cairn-summary',
-    summary: 'Cairn is a nutrition log and training planner with a built-in coach, served by one Node process from a single SQLite file. Food search draws on the USDA and Open Food Facts, a vision model reads nutrition labels from photos, and an MCP research tool looks up restaurant dishes. Training plans are written in a documented JSON schema and followed set by set, with weights calculated from PRs and WODs matched to the equipment on hand. A local model coaches through chat: it answers questions, reads screenshots, and proposes changes that the server checks and previews before anything is applied.',
+    summary: 'Cairn is a nutrition log and training planner with a built-in coach, served by one Node process from a single SQLite file. Food search draws on the USDA and Open Food Facts, a vision model reads nutrition labels from photos, and an MCP research tool looks up restaurant dishes. Training plans are written in a documented JSON schema and followed set by set, with weights calculated from PRs, WODs matched to the gear in each room, and a library of every workout and movement. A local model coaches through chat: it answers questions, reads screenshots, and proposes changes that the server checks and previews before anything is applied.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
