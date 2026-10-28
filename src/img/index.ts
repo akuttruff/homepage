@@ -10,8 +10,8 @@ import lmChatThread from './projects/lm-chat-thread.webp';
 import lmChatReply from './projects/lm-chat-reply.webp';
 import lmChatChats from './projects/lm-chat-chats.webp';
 import cairnDay from './projects/cairn-day.webp';
-import cairnAdd from './projects/cairn-add.webp';
-import cairnWeek from './projects/cairn-week.webp';
+import cairnTrain from './projects/cairn-train.webp';
+import cairnCoach from './projects/cairn-coach.webp';
 import whetstoneDesktop from './projects/whetstone-desktop.webp';
 import orreryToday from './projects/orrery-today.webp';
 import orreryReading from './projects/orrery-reading.webp';
@@ -41,8 +41,8 @@ export {
   lmChatReply,
   lmChatChats,
   cairnDay,
-  cairnAdd,
-  cairnWeek,
+  cairnTrain,
+  cairnCoach,
   whetstoneDesktop,
   orreryToday,
   orreryReading,

@@ -5,8 +5,8 @@ import {
   lmChatReply,
   lmChatChats,
   cairnDay,
-  cairnAdd,
-  cairnWeek,
+  cairnTrain,
+  cairnCoach,
   whetstoneDesktop,
   orreryToday,
   orreryReading,
@@ -62,9 +62,9 @@ const lmChatPhones: ProjectImageType[] = [
 ];
 const lmChatWide: ProjectImageType = desktop(lmChatDesktop, 'LM Chat on a desktop: the chat list in a sidebar beside a thread with tool calls');
 
-const cairnDayShot: ProjectImageType = phone(cairnDay, 'Cairn: a day\'s calories and macros against their goals, then water, alcohol and workouts');
-const cairnAddShot: ProjectImageType = phone(cairnAdd, 'Cairn: the Add sheet, with saved foods, a database search and a label scan');
-const cairnWeekShot: ProjectImageType = phone(cairnWeek, 'Cairn: a week of days, each against its own goal');
+const cairnDayShot: ProjectImageType = phone(cairnDay, 'Cairn: a day\'s calories and macros against their goals, then water and alcohol');
+const cairnTrainShot: ProjectImageType = phone(cairnTrain, 'Cairn: today\'s training sessions set by set, with the week\'s days above');
+const cairnCoachShot: ProjectImageType = phone(cairnCoach, 'Cairn: the coach chat, answering a question and proposing a change to the plan to apply');
 
 const whetstoneWide: ProjectImageType = desktop(whetstoneDesktop, 'Whetstone on a desktop: the problem beside the editor, with the scored review under the draft');
 
@@ -149,10 +149,10 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/cairn',
     icon: cairnIcon,
     stack: 'TypeScript, Vite, node:sqlite',
-    onDesktop: [cairnDayShot, cairnAddShot, cairnWeekShot],
-    onPhone: [cairnDayShot, cairnWeekShot],
+    onDesktop: [cairnDayShot, cairnTrainShot, cairnCoachShot],
+    onPhone: [cairnTrainShot, cairnCoachShot],
     summaryId: 'cairn-summary',
-    summary: 'Cairn is a food, water and workout log that totals calories and macros against daily goals. One Node process serves the app and keeps the log in a single SQLite file. Food search fans out to the USDA and Open Food Facts APIs. A vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. A small model writes weekly notes on how the numbers compare with the goals.',
+    summary: 'Cairn is a nutrition log and training planner with a coach. One Node process serves the app and keeps everything in a single SQLite file. Nutrition totals calories and macros against daily goals. Food search fans out to the USDA and Open Food Facts APIs, a vision model reads nutrition labels from photos, and a tool-calling model reads a restaurant\'s own page through an MCP research server. Train follows a multi-week plan, written in a documented JSON schema, set by set, with weights worked out from PRs and WODs fitted to the equipment on hand. A local model coaches in a chat, with screenshots too. It answers questions and proposes typed edits to the plan, which the server checks and previews by resolving the affected days before and after in a rolled-back transaction. Nothing changes until it is applied, and everything can be undone. The same model writes the next block from how the last one actually went.',
   }, {
     title: 'ORRERY',
     repoUrl: 'https://github.com/akuttruff/orrery',
