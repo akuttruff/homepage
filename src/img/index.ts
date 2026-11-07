@@ -24,8 +24,8 @@ import barometerMonitors from './projects/barometer-monitors.webp';
 import barometerGraphs from './projects/barometer-graphs.webp';
 import barometerTiles from './projects/barometer-tiles.webp';
 import barometerIcon from './projects/barometer-icon.webp';
-import weftTask from './projects/weft-task.webp';
-import weftTest from './projects/weft-test.webp';
+import weftRun from './projects/weft-run.webp';
+import weftResult from './projects/weft-result.webp';
 import weftIcon from './projects/weft-icon.webp';
 
 export {
@@ -55,7 +55,7 @@ export {
   barometerGraphs,
   barometerTiles,
   barometerIcon,
-  weftTask,
-  weftTest,
+  weftRun,
+  weftResult,
   weftIcon,
 };

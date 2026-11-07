@@ -19,8 +19,8 @@ import {
   barometerGraphs,
   barometerTiles,
   barometerIcon,
-  weftTask,
-  weftTest,
+  weftRun,
+  weftResult,
   weftIcon,
 } from '../img';
 
@@ -80,8 +80,8 @@ const barometerPhones: ProjectImageType[] = [
   phone(barometerGraphs, 'Barometer: health-check latency, errors logged and memory over the last six hours'),
 ];
 
-const weftTaskShot: ProjectImageType = { src: weftTask, alt: 'Weft: a task typed at the prompt, the planner\'s plan, the worker\'s edit as a diff, the tests run and the reviewer\'s verdict', width: 860, height: 1374 };
-const weftTestShot: ProjectImageType = { src: weftTest, alt: 'Weft: a follow-up task, the new test file written and shown as a diff, the type-check and tests passing, then the review', width: 860, height: 1374 };
+const weftRunShot: ProjectImageType = { src: weftRun, alt: 'Weft at work, sped up: a task typed at the prompt, the planner\'s plan approved, the worker\'s edit and test as diffs, the checks, the test run without the change, the review and the result card', width: 860, height: 1112 };
+const weftResultShot: ProjectImageType = { src: weftResult, alt: 'Weft\'s result card: plan complete, each Done when line with the test that covers it, checks passed, review approved', width: 860, height: 1112 };
 
 const projectDetails: ProjectDetailType[] = [
   {
@@ -111,8 +111,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/weft',
     icon: weftIcon,
     stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
-    onDesktop: [weftTaskShot, weftTestShot],
-    onPhone: [weftTaskShot],
+    onDesktop: [weftRunShot, weftResultShot],
+    onPhone: [weftRunShot],
     summaryId: 'weft-summary',
     summary: (
       <>
@@ -128,7 +128,9 @@ const projectDetails: ProjectDetailType[] = [
         <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen3.5‑9B</a>
         {' '}
         answers their questions about where things live. All three are served by LM Studio on my
-        Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be
+        Mac. Before the review, Weft runs the task&apos;s new tests with the change taken out, so a test
+        that would pass anyway is caught, and each task ends with a card matching every goal in the
+        plan to the test that covers it. Weft leverages tools from MCP servers, and every session is written to disk and can be
         resumed. When a conversation nears the context window, the earlier tasks are compacted into
         a summary.
       </>
