@@ -19,7 +19,7 @@ import {
   barometerGraphs,
   barometerTiles,
   barometerIcon,
-  weftRun,
+  weftPlan,
   weftResult,
   weftIcon,
 } from '../img';
@@ -80,7 +80,7 @@ const barometerPhones: ProjectImageType[] = [
   phone(barometerGraphs, 'Barometer: health-check latency, errors logged and memory over the last six hours'),
 ];
 
-const weftRunShot: ProjectImageType = { src: weftRun, alt: 'Weft at work, sped up: a task typed at the prompt, the planner\'s plan approved, the worker\'s edit and test as diffs, the checks, the test run without the change, the review and the result card', width: 860, height: 1112 };
+const weftPlanShot: ProjectImageType = { src: weftPlan, alt: 'Weft\'s plan for a task, waiting for approval: what was asked for, what will change, a choice to confirm, and the Done when list', width: 860, height: 1112 };
 const weftResultShot: ProjectImageType = { src: weftResult, alt: 'Weft\'s result card: plan complete, each Done when line with the test that covers it, checks passed, review approved', width: 860, height: 1112 };
 
 const projectDetails: ProjectDetailType[] = [
@@ -111,8 +111,8 @@ const projectDetails: ProjectDetailType[] = [
     repoLabel: 'github.com/akuttruff/weft',
     icon: weftIcon,
     stack: 'Rust, tokio, ratatui, reqwest, rmcp (MCP), LM Studio',
-    onDesktop: [weftRunShot, weftResultShot],
-    onPhone: [weftRunShot],
+    onDesktop: [weftPlanShot, weftResultShot],
+    onPhone: [weftPlanShot],
     summaryId: 'weft-summary',
     summary: (
       <>
