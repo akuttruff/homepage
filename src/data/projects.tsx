@@ -128,9 +128,7 @@ const projectDetails: ProjectDetailType[] = [
         <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen3.5‑9B</a>
         {' '}
         answers their questions about where things live. All three are served by LM Studio on my
-        Mac. Before the review, Weft runs the task&apos;s new tests with the change taken out, so a test
-        that would pass anyway is caught, and each task ends with a card matching every goal in the
-        plan to the test that covers it. Weft leverages tools from MCP servers, and every session is written to disk and can be
+        Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be
         resumed. When a conversation nears the context window, the earlier tasks are compacted into
         a summary.
       </>
