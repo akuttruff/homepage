@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <!-- Full-bleed opaque ground: iOS masks to its own squircle. -->
   <rect width="512" height="512" fill="#444444"/>
-  <!-- A compass rose: a faint ring, sage diagonals, cream east-west and south, gold north. -->
-  <circle cx="256" cy="256" r="196" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.4"/>
-  <g fill="#B0CADB" opacity="0.85">
-    <path d="M256 140 L280 256 L256 372 L232 256 Z" transform="rotate(45 256 256)"/>
-    <path d="M256 140 L280 256 L256 372 L232 256 Z" transform="rotate(-45 256 256)"/>
+  <!-- A terminal window: its frame and title bar with three dots, and a prompt waiting with a blue cursor. -->
+  <rect x="76" y="108" width="360" height="296" rx="28" fill="none" stroke="#FFFFFF" stroke-width="18"/>
+  <line x1="76" y1="170" x2="436" y2="170" stroke="#FFFFFF" stroke-width="18"/>
+  <g fill="#B0CADB">
+    <circle cx="116" cy="139" r="10"/>
+    <circle cx="150" cy="139" r="10"/>
+    <circle cx="184" cy="139" r="10"/>
   </g>
-  <path d="M88 256 L256 228 L424 256 L256 284 Z" fill="#FFFFFF"/>
-  <path d="M256 424 L286 256 H226 Z" fill="#FFFFFF"/>
-  <path d="M256 88 L286 256 H226 Z" fill="#3D92C9"/>
-  <circle cx="256" cy="256" r="14" fill="#444444"/>
+  <path d="M150 228 L214 280 L150 332" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="240" y1="332" x2="318" y2="332" stroke="#3D92C9" stroke-width="26" stroke-linecap="round"/>
 </svg>
