@@ -183,15 +183,15 @@ const projectDetails: ProjectDetailType[] = [
         {' '}
         <a href="https://github.com/akuttruff/astro-mcp" target="_blank" rel="noopener noreferrer">astro-mcp</a>
         , a Python ephemeris server, running over stdio and calls it directly. Every position in a chart is computed
-        from the
+        from the open-source
         {' '}
-        <a href="https://www.astro.com/swisseph/" target="_blank" rel="noopener noreferrer">Swiss Ephemeris</a>
-        , the same astronomical data astro.com uses; the model never works one out itself. A chart is drawn as SVG
-        in under a
-        second. A local model then writes the reading on the server and streams it into SQLite. Follow-up questions
+        <a href="https://github.com/aloistr/swisseph" target="_blank" rel="noopener noreferrer">Swiss Ephemeris</a>
+        ; the model never works one out itself. A chart is drawn as SVG in under a second. A local model then writes the reading on the server and streams it into SQLite. Follow-up questions
         are answered with the same tools through MCP. It reads tarot too: a daily card, a spread, or a card pulled
-        against a reading. The cards are dealt from the public-domain 1909 Rider-Waite-Smith deck, with Pamela
-        Colman Smith&apos;s original illustrations, and the same model reads them.
+        against a reading. The cards are dealt from the
+        {' '}
+        <a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite-Smith_tarot_deck_(TaionWC)" target="_blank" rel="noopener noreferrer">public-domain 1909 Rider-Waite-Smith deck</a>
+        , with Pamela Colman Smith&apos;s original illustrations, and the same model reads them.
       </>
     ),
   }, {
