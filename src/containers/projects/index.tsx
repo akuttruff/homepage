@@ -14,7 +14,14 @@ const Projects = () => (
           <a href="https://tailscale.com" target="_blank" rel="noopener noreferrer">Tailscale</a>
           {' '}
           from my home server, a Mac Studio with an M4 Max (16-core CPU, 40-core GPU) and 128 GB of
-          unified memory, running open-weights models.
+          unified memory, running
+          {' '}
+          <a href="https://en.wikipedia.org/wiki/Open_weights" target="_blank" rel="noopener noreferrer">open-weights models</a>
+          {' '}
+          in
+          {' '}
+          <a href="https://lmstudio.ai" target="_blank" rel="noopener noreferrer">LM Studio</a>
+          .
         </p>
         <ProjectList projectDetails={projectDetails} />
       </div>
