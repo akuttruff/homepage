@@ -179,7 +179,7 @@ const projectDetails: ProjectDetailType[] = [
     summaryId: 'orrery-summary',
     summary: (
       <>
-        Orrery casts transits, forecasts and a birth chart, one tap each. The server keeps
+        Orrery casts transits, forecasts and birth charts. The server keeps
         {' '}
         <a href="https://github.com/akuttruff/astro-mcp" target="_blank" rel="noopener noreferrer">astro-mcp</a>
         , a Python ephemeris server, running over stdio and calls it directly. Every position in a chart is computed
@@ -187,7 +187,7 @@ const projectDetails: ProjectDetailType[] = [
         {' '}
         <a href="https://github.com/aloistr/swisseph" target="_blank" rel="noopener noreferrer">Swiss Ephemeris</a>
         ; the model never works one out itself. A chart is drawn as SVG in under a second. A local model then writes the reading on the server and streams it into SQLite. Follow-up questions
-        are answered with the same tools through MCP. It reads tarot too: a daily card, a spread, or a card pulled
+        are answered with the same tools through MCP. It reads tarot too — a daily card, a spread, or a card pulled
         against a reading. The cards are dealt from the
         {' '}
         <a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite-Smith_tarot_deck_(TaionWC)" target="_blank" rel="noopener noreferrer">public-domain 1909 Rider-Waite-Smith deck</a>
