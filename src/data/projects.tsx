@@ -177,7 +177,6 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: orreryPhones,
     onPhone: orreryPhones.slice(0, 2),
     summaryId: 'orrery-summary',
-    hidden: true,
     summary: (
       <>
         Orrery casts transits, forecasts and a birth chart, one tap each. The server keeps
@@ -199,6 +198,7 @@ const projectDetails: ProjectDetailType[] = [
     onDesktop: barometerPhones,
     onPhone: barometerPhones.slice(0, 1),
     summaryId: 'barometer-summary',
+    hidden: true,
     summary: 'Barometer is a monitoring board for these apps, the model server they share and the Mac they run on. Once a minute, the server checks each app\'s health route and launchd log, and looks at memory pressure, disk space, Tailscale and last night\'s database backups. Every ten minutes it also sends the model a short test prompt to see how quickly it answers. The samples are kept in SQLite and drawn as SVG graphs covering the last hour, day or week.',
   },
 ];
