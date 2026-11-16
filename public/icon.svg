@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Full-bleed opaque ground: iOS masks to its own squircle. -->
+  <rect width="512" height="512" fill="#1B1D1A"/>
+  <!-- A compass rose: a faint ring, sage diagonals, cream east-west and south, gold north. -->
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#EDE8DC" stroke-width="6" opacity="0.4"/>
+  <g fill="#8FA382" opacity="0.85">
+    <path d="M256 140 L280 256 L256 372 L232 256 Z" transform="rotate(45 256 256)"/>
+    <path d="M256 140 L280 256 L256 372 L232 256 Z" transform="rotate(-45 256 256)"/>
+  </g>
+  <path d="M88 256 L256 228 L424 256 L256 284 Z" fill="#EDE8DC"/>
+  <path d="M256 424 L286 256 H226 Z" fill="#EDE8DC"/>
+  <path d="M256 88 L286 256 H226 Z" fill="#D9B86A"/>
+  <circle cx="256" cy="256" r="14" fill="#1B1D1A"/>
+</svg>
