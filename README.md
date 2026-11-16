@@ -1,4 +1,4 @@
-# Homepage for [Amie Kuttruff](http://www.amiekuttruff.com)
+# <img src="public/icon-180.png" width="32" alt=""> Homepage for [Amie Kuttruff](http://www.amiekuttruff.com)
 ### Resume + links to talks, music projects, and social accounts
 
 This project ports my old website over to React + Vite. My code lives in an [AWS S3](https://aws.amazon.com/s3/) bucket, and I host my site with [Google Domains](https://domains.google/).
