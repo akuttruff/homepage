@@ -9,7 +9,7 @@ const Projects = () => (
       <div className="resume">
         <h1 className="resume-subhead">Projects</h1>
         <p className="project-intro">
-          Software projects I serve via
+          A collection of software projects that I serve via
           {' '}
           <a href="https://tailscale.com" target="_blank" rel="noopener noreferrer">Tailscale</a>
           {' '}

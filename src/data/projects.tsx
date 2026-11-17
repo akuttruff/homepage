@@ -95,14 +95,14 @@ const projectDetails: ProjectDetailType[] = [
     summaryId: 'lm-chat-summary',
     summary: (
       <>
-        LM Chat talks to a model running on a home computer from a phone. One Node process serves the React app and
-        proxies each turn to the model server, which then streams the reply into SQLite as it arrives, so a
-        locked phone doesn&apos;t interrupt the conversation. The API token never reaches the browser. Every
-        message keeps its reasoning, its MCP
-        tool calls and its token counts. The model&apos;s memories of the user live in a file it reads and edits through
+        LM Chat talks to a local model running on a home computer from a phone. A Node process proxies the
+        user&apos;s conversation to the model server, which then streams the reply into SQLite as it arrives, so a
+        locked phone doesn&apos;t interrupt the conversation. Every message contains the user&apos;s reasoning
+        preferences, the MCP tool calls and the model&apos;s token counts. It can optionally persist memories of the
+        user via
         {' '}
         <a href="https://github.com/akuttruff/lm-memory-mcp" target="_blank" rel="noopener noreferrer">lm-memory-mcp</a>
-        , a memory MCP server.
+        , which lives as a file that the model can read and edit.
       </>
     ),
   }, {
