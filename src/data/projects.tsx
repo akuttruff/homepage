@@ -127,8 +127,8 @@ const projectDetails: ProjectDetailType[] = [
         {' '}
         <a href="https://huggingface.co/Qwen/Qwen3.5-9B" target="_blank" rel="noopener noreferrer">Qwen3.5‑9B</a>
         {' '}
-        acts as a scout that the planner and worker models can ask where things live in the code. It reads the
-        project so they don&apos;t have to, and answers in paths and line numbers rather than whole files. All three are served by LM Studio on my
+        acts as a scout that the planner and worker models can ask where things live in the code. It searches and
+        reads the project itself, and answers in paths and line numbers rather than whole files. All three are served by LM Studio on my
         Mac. Weft leverages tools from MCP servers, and every session is written to disk and can be
         resumed. When a conversation nears the context window, the earlier tasks are compacted into
         a summary.
