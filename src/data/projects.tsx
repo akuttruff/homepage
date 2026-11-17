@@ -145,14 +145,16 @@ const projectDetails: ProjectDetailType[] = [
     summaryId: 'whetstone-summary',
     summary: (
       <>
-        Whetstone is an interview practice tool with a local model as the reviewer. Solutions are written in a
+        Whetstone is an interview practice tool that adapts as you improve, with a local model as reviewer and
+        tutor. Solutions are written in a
         {' '}
         <a href="https://codemirror.net" target="_blank" rel="noopener noreferrer">CodeMirror</a>
         {' '}
-        editor, with syntax highlighting for each language and live feedback on syntax errors as you type. The server
-        runs each solution against real tests in a sandbox, in TypeScript, Ruby, Java or Rust. It then sends the draft
-        and the results to the model over the OpenAI chat API and streams back a scored review, a hint ladder or a
-        tutor thread.
+        editor and run against real tests in a sandbox, in TypeScript, Ruby, Java or Rust. A local model reviews
+        each draft and scores it. When you&apos;re stuck, it writes a hint ladder that goes from a gentle nudge to a
+        full plan. When you&apos;re ready to move on, it writes a new problem on the same pattern, easier, similar or
+        harder than the last. Primers and step-through visualizations explain the core techniques, and reference
+        links back up the knowledge questions.
       </>
     ),
   }, {
